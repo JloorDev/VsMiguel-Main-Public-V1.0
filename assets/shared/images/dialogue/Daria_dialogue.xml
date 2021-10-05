@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Daria_dialogue.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Daria_Andry0000" x="0" y="0" width="338" height="410"/>
+	<SubTexture name="Daria_Andry0001" x="0" y="0" width="338" height="410"/>
+	<SubTexture name="Daria_Andry0002" x="338" y="0" width="338" height="410"/>
+	<SubTexture name="Daria_Andry0003" x="338" y="0" width="338" height="410"/>
+	<SubTexture name="Daria_Andry0004" x="676" y="0" width="338" height="410"/>
+	<SubTexture name="Daria_Andry0005" x="676" y="0" width="338" height="410"/>
+	<SubTexture name="Daria_Confused0000" x="1014" y="0" width="338" height="409"/>
+	<SubTexture name="Daria_Horror0000" x="1352" y="0" width="365" height="493"/>
+	<SubTexture name="Daria_Horror0001" x="1352" y="0" width="365" height="493"/>
+	<SubTexture name="Daria_Horror0002" x="0" y="493" width="365" height="493"/>
+	<SubTexture name="Daria_Horror0003" x="0" y="493" width="365" height="493"/>
+	<SubTexture name="Daria_Horror0004" x="365" y="493" width="365" height="493"/>
+	<SubTexture name="Daria_Horror0005" x="365" y="493" width="365" height="493"/>
+	<SubTexture name="Daria_Smile0000" x="730" y="493" width="338" height="409"/>
+	<SubTexture name="Daria_Smile0001" x="730" y="493" width="338" height="409"/>
+	<SubTexture name="Daria_Smile0002" x="1068" y="493" width="338" height="409"/>
+	<SubTexture name="Daria_Smile0003" x="1068" y="493" width="338" height="409"/>
+	<SubTexture name="Daria_Smile0004" x="1406" y="493" width="338" height="409"/>
+	<SubTexture name="Daria_Smile0005" x="1406" y="493" width="338" height="409"/>
+	<SubTexture name="Daria_Text0000" x="0" y="986" width="338" height="409"/>
+	<SubTexture name="Daria_Text0001" x="0" y="986" width="338" height="409"/>
+	<SubTexture name="Daria_Text0002" x="338" y="986" width="338" height="409"/>
+	<SubTexture name="Daria_Text0003" x="338" y="986" width="338" height="409"/>
+	<SubTexture name="Daria_Text0004" x="676" y="986" width="338" height="409"/>
+	<SubTexture name="Daria_Text0005" x="676" y="986" width="338" height="409"/>
+</TextureAtlas>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BF_dialogue.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BF_Afraid0000" x="0" y="0" width="509" height="510"/>
+	<SubTexture name="BF_Afraid0001" x="509" y="0" width="509" height="510"/>
+	<SubTexture name="bftalkloop_Normal0000" x="1018" y="0" width="534" height="556"/>
+	<SubTexture name="bftalkloop_Normal0001" x="1018" y="0" width="534" height="556"/>
+	<SubTexture name="bftalkloop_Normal0002" x="0" y="556" width="534" height="556"/>
+	<SubTexture name="bftalkloop_Normal0003" x="0" y="556" width="534" height="556"/>
+	<SubTexture name="bftalkloop_Normal0004" x="534" y="556" width="534" height="556"/>
+	<SubTexture name="bftalkloop_Normal0005" x="534" y="556" width="534" height="556"/>
+	<SubTexture name="bftalkloop_Annoyed0000" x="1068" y="556" width="534" height="556"/>
+	<SubTexture name="bftalkloop_Annoyed0001" x="1068" y="556" width="534" height="556"/>
+	<SubTexture name="bftalkloop_Annoyed0002" x="0" y="1112" width="534" height="556"/>
+	<SubTexture name="bftalkloop_Annoyed0003" x="0" y="1112" width="534" height="556"/>
+	<SubTexture name="bftalkloop_Annoyed0004" x="534" y="1112" width="534" height="556"/>
+	<SubTexture name="bftalkloop_Annoyed0005" x="534" y="1112" width="534" height="556"/>
+</TextureAtlas>

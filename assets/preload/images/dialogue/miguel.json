@@ -1,0 +1,115 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		210,
+		30
+	],
+	"scale": 1.55,
+	"animations": [
+		{
+			"loop_name": "Miguel_Text",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Miguel_Text",
+			"anim": "MiguelText",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Miguel_Sadsmile",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Miguel_Sadsmile",
+			"anim": "MiguelSadslime",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Miguel_Corrupt",
+			"idle_offsets": [
+				-25,
+				-20
+			],
+			"idle_name": "Miguel_Corrupt",
+			"anim": "MiguelCorrupt",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Miguel_TiredNormal",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Miguel_TiredNormal",
+			"anim": "MiguelTirednormal",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Miguel_TiredSad",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Miguel_TiredSad",
+			"anim": "MiguelTiredSad",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Miguel_confused",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Miguel_confused",
+			"anim": "MiguelConfused",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Miguel_happy",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Miguel_happy",
+			"anim": "MiguelHappy",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Miguel_smugsmile",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Miguel_smugsmile",
+			"anim": "MiguelSmugsmile",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "Miguel_dialogue"
+}

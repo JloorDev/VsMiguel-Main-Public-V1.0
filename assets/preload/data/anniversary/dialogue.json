@@ -1,0 +1,46 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "Hey que hay Miguel",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05
+		},
+		{
+			"expression": "MiguelText",
+			"text": "Nada enanito",
+			"boxState": "normal",
+			"portrait": "miguel",
+			"speed": 0.05
+		},
+		{
+			"expression": "annoyed",
+			"text": "que te pasa mmv",
+			"boxState": "angry",
+			"portrait": "bf",
+			"speed": 0.05
+		},
+		{
+			"expression": "MiguelSmugsmile",
+			"text": "Soy gey",
+			"boxState": "normal",
+			"portrait": "miguel",
+			"speed": 0.05
+		},
+		{
+			"speed": 0.05,
+			"portrait": "nelson",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Que gey la verda"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "daria",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "confirmo"
+		}
+	]
+}

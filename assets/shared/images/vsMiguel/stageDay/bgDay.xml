@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bgDay.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BGHouseDay0000" x="0" y="0" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0001" x="0" y="0" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0002" x="0" y="0" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0003" x="0" y="0" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0004" x="0" y="0" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0005" x="0" y="0" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0006" x="0" y="0" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0007" x="0" y="0" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0008" x="0" y="0" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0009" x="0" y="0" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0010" x="0" y="0" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0011" x="0" y="0" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0012" x="0" y="0" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0013" x="0" y="0" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0014" x="0" y="1800" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0015" x="0" y="1800" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0016" x="0" y="1800" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0017" x="0" y="1800" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0018" x="0" y="1800" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0019" x="0" y="1800" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0020" x="0" y="1800" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0021" x="0" y="1800" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0022" x="0" y="1800" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0023" x="0" y="1800" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0024" x="0" y="1800" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0025" x="0" y="1800" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0026" x="0" y="1800" width="2560" height="1800"/>
+	<SubTexture name="BGHouseDay0027" x="0" y="1800" width="2560" height="1800"/>
+</TextureAtlas>

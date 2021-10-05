@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BGMist.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BGMist0000" x="5" y="5" width="2835" height="725"/>
+	<SubTexture name="BGMist0001" x="5" y="5" width="2835" height="725"/>
+	<SubTexture name="BGMist0002" x="5" y="730" width="2835" height="725"/>
+	<SubTexture name="BGMist0003" x="5" y="730" width="2835" height="725"/>
+	<SubTexture name="BGMist0004" x="5" y="1455" width="2835" height="725"/>
+	<SubTexture name="BGMist0005" x="5" y="1455" width="2835" height="725"/>
+	<SubTexture name="BGMist0006" x="5" y="730" width="2835" height="725"/>
+	<SubTexture name="BGMist0007" x="5" y="730" width="2835" height="725"/>
+	<SubTexture name="BGMist0008" x="5" y="5" width="2835" height="725"/>
+	<SubTexture name="BGMist0009" x="5" y="5" width="2835" height="725"/>
+	<SubTexture name="BGMist0010" x="5" y="2180" width="2835" height="725"/>
+	<SubTexture name="BGMist0011" x="5" y="2180" width="2835" height="725"/>
+	<SubTexture name="BGMist0012" x="5" y="2905" width="2835" height="725"/>
+	<SubTexture name="BGMist0013" x="5" y="2905" width="2835" height="725"/>
+	<SubTexture name="BGMist0014" x="5" y="2180" width="2835" height="725"/>
+	<SubTexture name="BGMist0015" x="5" y="2180" width="2835" height="725"/>
+</TextureAtlas>

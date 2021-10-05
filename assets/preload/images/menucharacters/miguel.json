@@ -1,0 +1,10 @@
+{
+	"idle_anim": "MiguelCampaign",
+	"image": "Menu_Miguel",
+	"position": [
+		50,
+		117
+	],
+	"scale": 0.65,
+	"confirm_anim": "M Dad Idle"
+}

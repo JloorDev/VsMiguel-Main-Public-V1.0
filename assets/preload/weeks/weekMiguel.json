@@ -1,0 +1,57 @@
+{
+	"storyName": "Mayor Of The Town Migueltale",
+	"hideFreeplay": false,
+	"weekBackground": "miguel",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"weekCharacters": [
+		"miguel",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"Anniversary",
+			"miguel",
+			[
+				255,
+				235,
+				0
+			]
+		],
+		[
+			"Mayor Thunder",
+			"miguel",
+			[
+				255,
+				235,
+				0
+			]
+		],
+		[
+			"Buzzing Brother",
+			"nelson",
+			[
+				147,
+				204,
+				64
+			]
+		],
+		[
+			"Hungry Dark",
+			"daria",
+			[
+				186,
+				33,
+				233
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Week Miguel"
+}

@@ -1,0 +1,37 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		280,
+		20
+	],
+	"scale": 1.65,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				-1,
+				-11
+			],
+			"loop_name": "Nelson_Text",
+			"idle_name": "Nelson_Text"
+		},
+		{
+			"loop_name": "Nelson_Happy",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Nelson_Happy",
+			"anim": "happy",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "Nelson_dialogue"
+}

@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Daria.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DariaDown0000" x="0" y="0" width="453" height="702" frameX="0" frameY="-4" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0001" x="0" y="0" width="453" height="702" frameX="0" frameY="-4" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0002" x="453" y="0" width="455" height="705" frameX="0" frameY="-2" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0003" x="453" y="0" width="455" height="705" frameX="0" frameY="-2" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0004" x="908" y="0" width="456" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0005" x="908" y="0" width="456" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0006" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0007" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0008" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0009" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0010" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0011" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0012" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0013" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0014" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0015" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0016" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0017" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0018" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0019" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0020" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0021" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0022" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0023" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="DariaDown0024" x="1364" y="0" width="457" height="706" frameX="0" frameY="0" frameWidth="457" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0000" x="1821" y="0" width="457" height="702" frameX="0" frameY="-4" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0001" x="1821" y="0" width="457" height="702" frameX="0" frameY="-4" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0002" x="2278" y="0" width="459" height="705" frameX="0" frameY="-2" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0003" x="2278" y="0" width="459" height="705" frameX="0" frameY="-2" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0004" x="2737" y="0" width="459" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0005" x="2737" y="0" width="459" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0006" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0007" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0008" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0009" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0010" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0011" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0012" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0013" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0014" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0015" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0016" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0017" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0018" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0019" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0020" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0021" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0022" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0023" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="MiguelDaDown0024" x="3196" y="0" width="460" height="706" frameX="0" frameY="0" frameWidth="460" frameHeight="707"/>
+	<SubTexture name="DariaIdle0000" x="0" y="706" width="454" height="821" frameX="-12" frameY="-5" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0001" x="0" y="706" width="454" height="821" frameX="-12" frameY="-5" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0002" x="454" y="706" width="455" height="823" frameX="0" frameY="-3" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0003" x="909" y="706" width="443" height="823" frameX="-12" frameY="-3" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0004" x="1352" y="706" width="442" height="824" frameX="-12" frameY="-1" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0005" x="1352" y="706" width="442" height="824" frameX="-12" frameY="-1" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0006" x="1794" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0007" x="1794" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0008" x="1794" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0009" x="1794" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0010" x="1794" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0011" x="1794" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0012" x="1794" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0013" x="1794" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0014" x="2235" y="706" width="466" height="821" frameX="0" frameY="-5" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0015" x="0" y="706" width="454" height="821" frameX="-12" frameY="-5" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0016" x="2701" y="706" width="443" height="823" frameX="-12" frameY="-3" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0017" x="2701" y="706" width="443" height="823" frameX="-12" frameY="-3" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0018" x="3144" y="706" width="442" height="824" frameX="-12" frameY="-1" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0019" x="3144" y="706" width="442" height="824" frameX="-12" frameY="-1" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0020" x="3586" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0021" x="3586" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0022" x="3586" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0023" x="3586" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0024" x="3586" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0025" x="3586" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0026" x="3586" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaIdle0027" x="3586" y="706" width="441" height="825" frameX="-12" frameY="0" frameWidth="466" frameHeight="826"/>
+	<SubTexture name="DariaLeft0000" x="0" y="1531" width="461" height="799" frameX="0" frameY="-2" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0001" x="0" y="1531" width="461" height="799" frameX="0" frameY="-2" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0002" x="461" y="1531" width="452" height="800" frameX="-13" frameY="-1" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0003" x="461" y="1531" width="452" height="800" frameX="-13" frameY="-1" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0004" x="913" y="1531" width="453" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0005" x="913" y="1531" width="453" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0006" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0007" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0008" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0009" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0010" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0011" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0012" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0013" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0014" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0015" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0016" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0017" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0018" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0019" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0020" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0021" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0022" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0023" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaLeft0024" x="1366" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0000" x="1824" y="1531" width="461" height="799" frameX="0" frameY="-2" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0001" x="1824" y="1531" width="461" height="799" frameX="0" frameY="-2" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0002" x="2285" y="1531" width="452" height="800" frameX="-13" frameY="-1" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0003" x="2285" y="1531" width="452" height="800" frameX="-13" frameY="-1" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0004" x="2737" y="1531" width="453" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0005" x="2737" y="1531" width="453" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0006" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0007" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0008" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0009" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0010" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0011" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0012" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0013" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0014" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0015" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0016" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0017" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0018" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0019" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0020" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0021" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0022" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0023" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="MiguelDaLeft0024" x="3190" y="1531" width="458" height="801" frameX="-14" frameY="0" frameWidth="472" frameHeight="801"/>
+	<SubTexture name="DariaRight0000" x="3648" y="1531" width="420" height="788" frameX="-3" frameY="-5" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0001" x="3648" y="1531" width="420" height="788" frameX="-3" frameY="-5" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0002" x="0" y="2332" width="419" height="791" frameX="-1" frameY="-2" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0003" x="0" y="2332" width="419" height="791" frameX="-1" frameY="-2" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0004" x="419" y="2332" width="417" height="792" frameX="0" frameY="-1" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0005" x="419" y="2332" width="417" height="792" frameX="0" frameY="-1" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0006" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0007" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0008" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0009" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0010" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0011" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0012" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0013" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0014" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0015" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0016" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0017" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0018" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0019" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0020" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0021" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0022" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0023" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="DariaRight0024" x="836" y="2332" width="416" height="793" frameX="0" frameY="0" frameWidth="423" frameHeight="793"/>
+	<SubTexture name="MiguelDaRight0000" x="1252" y="2332" width="413" height="788" frameX="-3" frameY="-5" frameWidth="420" frameHeight="793"/>
+	<SubTexture name="MiguelDaRight0001" x="1252" y="2332" width="413" height="788" frameX="-3" frameY="-5" frameWidth="420" frameHeight="793"/>
+	<SubTexture name="MiguelDaRight0002" x="1665" y="2332" width="417" height="791" frameX="-1" frameY="-2" frameWidth="420" frameHeight="793"/>
+	<SubTexture name="MiguelDaRight0003" x="1665" y="2332" width="417" height="791" frameX="-1" frameY="-2" frameWidth="420" frameHeight="793"/>
+	<SubTexture name="MiguelDaRight0004" x="2082" y="2332" width="419" height="792" frameX="0" frameY="-1" frameWidth="420" frameHeight="793"/>
+	<SubTexture name="MiguelDaRight0005" x="2082" y="2332" width="419" height="792" frameX="0" frameY="-1" frameWidth="420" frameHeight="793"/>
+	<SubTexture name="MiguelDaRight0006" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0007" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0008" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0009" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0010" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0011" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0012" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0013" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0014" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0015" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0016" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0017" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0018" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0019" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0020" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0021" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0022" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0023" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="MiguelDaRight0024" x="2501" y="2332" width="420" height="793"/>
+	<SubTexture name="DariaScream Miguel0000" x="2921" y="2332" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0001" x="2921" y="2332" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0002" x="3355" y="2332" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0003" x="3355" y="2332" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0004" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0005" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0006" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0007" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0008" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0009" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0010" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0011" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0012" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0013" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0014" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0015" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0016" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0017" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0018" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0019" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0020" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0021" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0022" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0023" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaScream Miguel0024" x="0" y="3154" width="434" height="822"/>
+	<SubTexture name="DariaUp0000" x="434" y="3154" width="420" height="878" frameX="-6" frameY="-3" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0001" x="434" y="3154" width="420" height="878" frameX="-6" frameY="-3" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0002" x="854" y="3154" width="421" height="879" frameX="-3" frameY="-2" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0003" x="854" y="3154" width="421" height="879" frameX="-3" frameY="-2" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0004" x="1275" y="3154" width="421" height="879" frameX="-1" frameY="-1" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0005" x="1275" y="3154" width="421" height="879" frameX="-1" frameY="-1" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0006" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0007" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0008" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0009" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0010" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0011" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0012" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0013" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0014" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0015" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0016" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0017" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0018" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0019" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0020" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0021" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0022" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0023" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="DariaUp0024" x="1696" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0000" x="2116" y="3154" width="420" height="878" frameX="-6" frameY="-3" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0001" x="2116" y="3154" width="420" height="878" frameX="-6" frameY="-3" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0002" x="2536" y="3154" width="421" height="879" frameX="-3" frameY="-2" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0003" x="2536" y="3154" width="421" height="879" frameX="-3" frameY="-2" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0004" x="2957" y="3154" width="421" height="879" frameX="-1" frameY="-1" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0005" x="2957" y="3154" width="421" height="879" frameX="-1" frameY="-1" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0006" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0007" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0008" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0009" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0010" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0011" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0012" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0013" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0014" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0015" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0016" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0017" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0018" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0019" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0020" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0021" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0022" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0023" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+	<SubTexture name="MiguelDaUp0024" x="3378" y="3154" width="420" height="880" frameX="0" frameY="0" frameWidth="426" frameHeight="881"/>
+</TextureAtlas>

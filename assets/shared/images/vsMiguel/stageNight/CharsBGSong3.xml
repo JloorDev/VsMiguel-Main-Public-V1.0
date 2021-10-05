@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="CharsBGSong3.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="CharsNightAnimation0000" x="0" y="0" width="2148" height="469"/>
+	<SubTexture name="CharsNightAnimation0001" x="0" y="0" width="2148" height="469"/>
+	<SubTexture name="CharsNightAnimation0002" x="0" y="469" width="2148" height="469"/>
+	<SubTexture name="CharsNightAnimation0003" x="0" y="469" width="2148" height="469"/>
+	<SubTexture name="CharsNightAnimation0004" x="0" y="938" width="2148" height="469"/>
+	<SubTexture name="CharsNightAnimation0005" x="0" y="938" width="2148" height="469"/>
+	<SubTexture name="CharsNightAnimation0006" x="0" y="938" width="2148" height="469"/>
+	<SubTexture name="CharsNightAnimation0007" x="0" y="938" width="2148" height="469"/>
+	<SubTexture name="CharsNightAnimation0008" x="0" y="938" width="2148" height="469"/>
+	<SubTexture name="CharsNightAnimation0009" x="0" y="938" width="2148" height="469"/>
+	<SubTexture name="CharsNightAnimation0010" x="0" y="938" width="2148" height="469"/>
+	<SubTexture name="CharsNightAnimation0011" x="0" y="938" width="2148" height="469"/>
+	<SubTexture name="CharsNightAnimation0012" x="0" y="938" width="2148" height="469"/>
+	<SubTexture name="CharsNightAnimation0013" x="0" y="938" width="2148" height="469"/>
+</TextureAtlas>

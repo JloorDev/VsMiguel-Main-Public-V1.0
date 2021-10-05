@@ -1,0 +1,208 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				65,
+				95
+			],
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "DariaLeft"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "DariaDown"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				53,
+				174
+			],
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "DariaUp"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-34,
+				87
+			],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "DariaRight"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				21,
+				119
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "DariaIdle"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle-loop",
+			"fps": 24,
+			"name": "Dad idle dance",
+			"indices": [
+				10,
+				11,
+				12,
+				12
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-9,
+				10
+			],
+			"anim": "singLEFT-loop",
+			"fps": 24,
+			"name": "Dad Sing Note LEFT",
+			"indices": [
+				12,
+				13,
+				14,
+				15
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				27
+			],
+			"anim": "singRIGHT-loop",
+			"fps": 24,
+			"name": "Dad Sing Note RIGHT",
+			"indices": [
+				15,
+				16,
+				17,
+				18
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-6,
+				50
+			],
+			"anim": "singUP-loop",
+			"fps": 24,
+			"name": "Dad Sing Note UP",
+			"indices": [
+				56,
+				57,
+				58,
+				59
+			]
+		},
+		{
+			"offsets": [
+				140,
+				-100
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "WhatYouKnowAboutRollingDownInTheDeep"
+		},
+		{
+			"offsets": [
+				53,
+				174
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP-alt",
+			"loop": false,
+			"name": "MiguelDaUp"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"loop": false,
+			"name": "MiguelDaDown"
+		},
+		{
+			"offsets": [
+				-34,
+				87
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"loop": false,
+			"name": "MiguelDaRight"
+		},
+		{
+			"offsets": [
+				65,
+				94
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"loop": false,
+			"name": "MiguelDaLeft"
+		},
+		{
+			"offsets": [
+				9,
+				116
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "scream",
+			"loop": false,
+			"name": "DariaScream Miguel"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Daria",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "daria",
+    	"flip_x": false,
+    	"healthbar_colors": [
+        	186,
+        	33,
+        	233
+    	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

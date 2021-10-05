@@ -1,0 +1,50 @@
+{
+	"dialogue_pos": "right",
+	"position": [
+		0,
+		0
+	],
+	"scale": 1,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				-1,
+				-11
+			],
+			"loop_name": "bftalkloop_Normal",
+			"idle_name": "BFTalk"
+		},
+		{
+			"loop_name": "bftalkloop_Annoyed",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "bftalkloop_Annoyed",
+			"anim": "annoyed",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "BF_Afraid",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "BF_Afraid",
+			"anim": "afraid",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "BF_Dialogue"
+}

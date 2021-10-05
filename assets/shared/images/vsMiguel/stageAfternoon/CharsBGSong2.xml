@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="CharsBGSong2.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="CharsÁftermoonAnimation0000" x="0" y="0" width="1973" height="438" frameX="0" frameY="-4" frameWidth="1973" frameHeight="442"/>
+	<SubTexture name="CharsÁftermoonAnimation0001" x="0" y="0" width="1973" height="438" frameX="0" frameY="-4" frameWidth="1973" frameHeight="442"/>
+	<SubTexture name="CharsÁftermoonAnimation0002" x="0" y="438" width="1971" height="440" frameX="-1" frameY="-2" frameWidth="1973" frameHeight="442"/>
+	<SubTexture name="CharsÁftermoonAnimation0003" x="0" y="438" width="1971" height="440" frameX="-1" frameY="-2" frameWidth="1973" frameHeight="442"/>
+	<SubTexture name="CharsÁftermoonAnimation0004" x="0" y="878" width="1969" height="441" frameX="-2" frameY="0" frameWidth="1973" frameHeight="442"/>
+	<SubTexture name="CharsÁftermoonAnimation0005" x="0" y="878" width="1969" height="441" frameX="-2" frameY="0" frameWidth="1973" frameHeight="442"/>
+	<SubTexture name="CharsÁftermoonAnimation0006" x="0" y="878" width="1969" height="441" frameX="-2" frameY="0" frameWidth="1973" frameHeight="442"/>
+	<SubTexture name="CharsÁftermoonAnimation0007" x="0" y="878" width="1969" height="441" frameX="-2" frameY="0" frameWidth="1973" frameHeight="442"/>
+	<SubTexture name="CharsÁftermoonAnimation0008" x="0" y="878" width="1969" height="441" frameX="-2" frameY="0" frameWidth="1973" frameHeight="442"/>
+	<SubTexture name="CharsÁftermoonAnimation0009" x="0" y="878" width="1969" height="441" frameX="-2" frameY="0" frameWidth="1973" frameHeight="442"/>
+	<SubTexture name="CharsÁftermoonAnimation0010" x="0" y="878" width="1969" height="441" frameX="-2" frameY="0" frameWidth="1973" frameHeight="442"/>
+	<SubTexture name="CharsÁftermoonAnimation0011" x="0" y="878" width="1969" height="441" frameX="-2" frameY="0" frameWidth="1973" frameHeight="442"/>
+	<SubTexture name="CharsÁftermoonAnimation0012" x="0" y="878" width="1969" height="441" frameX="-2" frameY="0" frameWidth="1973" frameHeight="442"/>
+	<SubTexture name="CharsÁftermoonAnimation0013" x="0" y="878" width="1969" height="441" frameX="-2" frameY="0" frameWidth="1973" frameHeight="442"/>
+</TextureAtlas>
