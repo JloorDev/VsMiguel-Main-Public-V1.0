@@ -67,6 +67,7 @@ class DialogueCharacter extends FlxSprite
 	public var startingPos:Float = 0; //For center characters, it works as the starting Y, for everything else it works as starting X
 	public var isGhost:Bool = false; //For the editor
 	public var curCharacter:String = 'bf';
+	var cutFolder = 'cutscene_1';
 
 	var cutSprite:FlxSprite;
 
@@ -168,12 +169,14 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	public var skipDialogueThing:Void->Void = null;
 	var bgFade:FlxSprite = null;
 	var box:FlxSprite;
+	var cutSprite:FlxSprite;
 	var textToType:String = '';
 
 	var arrayCharacters:Array<DialogueCharacter> = [];
 
 	var currentText:Int = 0;
 	var offsetPos:Float = -600;
+	var cutFolder = 'cutscene_1';
 
 	var textBoxTypes:Array<String> = ['normal', 'angry'];
 	//var charPositionList:Array<String> = ['left', 'center', 'right'];
@@ -192,6 +195,11 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		bgFade.visible = true;
 		bgFade.alpha = 0;
 		add(bgFade);
+
+		cutSprite = new FlxSprite(0, 0).makeGraphic(100, 100);//.loadGraphic(Paths.image('cutscenes/' + cutFolder + '/' + cutImages[0]));
+		cutSprite.scrollFactor.set();
+		cutSprite.alpha = 0;
+		add(cutSprite);
 
 		this.dialogueList = dialogueList;
 		spawnCharacters();
@@ -452,6 +460,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 			}
 		}
 
+		var charToAdd:String = dialogueList.dialogue[currentText].portrait;
 		var character:Int = 0;
 		box.visible = true;
 		for (i in 0...arrayCharacters.length) {
@@ -485,6 +494,13 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		textToType = curDialogue.text;
 		daText = new Alphabet(DEFAULT_TEXT_X, DEFAULT_TEXT_Y, textToType, false, true, curDialogue.speed, 0.7);
 		add(daText);
+
+		cutSprite.loadGraphic(Paths.image('cutscenes/' + cutFolder + '/' + charToAdd[6]));
+		cutSprite.setGraphicSize(FlxG.width);
+		cutSprite.updateHitbox();
+		cutSprite.screenCenter(X);
+		cutSprite.screenCenter(Y);
+		cutSprite.alpha = 1;
 
 		var char:DialogueCharacter = arrayCharacters[character];
 		if(char != null) {

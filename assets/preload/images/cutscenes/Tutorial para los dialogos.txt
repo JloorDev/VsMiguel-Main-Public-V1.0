@@ -1,0 +1,52 @@
+Dialogos de Aniversary
+-------------------------------------
+La escena 1 debe estar desde el texto 1 hasta el 6
+La escena 2 debe estar desde el texto 7 hasta el 10
+La escena 3 debe estar desde el texto 11 hasta el 12
+La escena 4 debe estar en el texto 13 y 15
+La escena 5 debe estar en el texto 14 
+En el texto 16 solo va a ver un fondo negro
+La escena 6 debe estar desde el texto 17 hasta el 20
+La escena 7 debe estar en el texto 21
+La escena 8 debe estar en el texto 22
+La escena 9 debe estar en el texto 23
+La escena 10 debe estar en el texto 24
+La escena 11 debe estar desde el texto 25 hasta el 40
+La escena 12 debe estar en el texto 41 (El de antes del ultimo)
+La escena 13 debe estar en el texto 42 (El ultimo texto)
+
+-------------------------------------
+Dialogos de MayorThunder
+-------------------------------------
+No te preocupes, no tiene escenas esta cancion XD
+Solo pon el dialogo encima del juego (Como en cualquier mod)
+
+-------------------------------------
+Dialogos de BuzzingBrother
+-------------------------------------
+La escena llamada VsMiguelSong3_cutscene1.PNG va a estar desde el texto 1 al 9
+La escena llamada VsMiguelSong3_cutscene2.PNG va a estar en el texto 10
+La escena llamada VsMiguelSong3_cutscene3.PNG va a estar en el texto 11 al 13 (Mientras mas me la mamas mas me crece)
+La escena llamada VsMiguelSong3_cutscene4.PNG va a estar desde el texto 14 al 18
+Ahora pon la escena VsMiguelSong3_cutscene1.PNG otra vez en los demas textos que vienen
+
+-------------------------------------
+Dialogos de BuzzingBrotherEnd
+-------------------------------------
+Bueno, este no tiene escenas entonces haz lo mismo que con MayorThunder
+Recuerde que el dialogo de BuzzingBrotherEnd.txt viene justo despues que termine la musica de Nelson
+
+-------------------------------------
+Dialogos de HundryDark
+------------------------------------
+Pon la imagen llamada VsMiguelSong4_cutscene.PNG en todas las escenas y listo XD
+
+-------------------------------------
+Dialogos de EndDialoge
+------------------------------------
+En este es lo mismo que con HundryDark XD
+Pon la imagen llamada VsMiguelEnd_Cutscene
+
+Epico, llegaste al final
+Te ganaste un beso negro en el culo y un Nelson peluche
+
