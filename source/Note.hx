@@ -62,6 +62,8 @@ class Note extends FlxSprite
 	public var hitHealth:Float = 0.023;
 	public var missHealth:Float = 0.0475;
 
+	public var hitCausesMiss:Bool = false;
+
 	public var texture(default, set):String = null;
 
 	private function set_texture(value:String):String {
@@ -87,6 +89,12 @@ class Note extends FlxSprite
 					colorSwap.hue = 0;
 					colorSwap.saturation = 0;
 					colorSwap.brightness = 0;
+					if(isSustainNote) {
+						missHealth = 0.1;
+					} else {
+						missHealth = 0.3;
+					}
+					hitCausesMiss = true;
 			}
 			noteType = value;
 		}

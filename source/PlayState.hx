@@ -207,6 +207,12 @@ class PlayState extends MusicBeatState
 	var mist:FlxSprite;
 	var camLocked:Bool = true;
 
+	public static var dadnoteMovementXoffset:Int = 0;
+	public static var dadnoteMovementYoffset:Int = 0;
+
+	public static var bfnoteMovementXoffset:Int = 0;
+	public static var bfnoteMovementYoffset:Int = 0;
+
 	var upperBoppers:BGSprite;
 	var bottomBoppers:BGSprite;
 	var santa:BGSprite;
@@ -256,6 +262,12 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
+		dadnoteMovementXoffset = 0;
+		dadnoteMovementYoffset = 0;
+
+		bfnoteMovementXoffset = 0;
+		bfnoteMovementYoffset = 0;
+
 		#if MODS_ALLOWED
 		Paths.destroyLoadedImages(resetSpriteCache);
 		#end
@@ -1144,8 +1156,8 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 
 				case 'anniversary':
-					startDialogue(dialogueJson);
-
+					startVideo('DariaAnimationStart');
+		
 				default:
 					startCountdown();
 			}
@@ -1251,9 +1263,9 @@ class PlayState extends MusicBeatState
 			(new FlxVideo(fileName)).finishCallback = function() {
 				remove(bg);
 				if(endingSong) {
-					endSong();
+					startDialogue(dialogueJson);
 				} else {
-					startCountdown();
+					startDialogue(dialogueJson);
 				}
 			}
 			return;
@@ -1262,9 +1274,9 @@ class PlayState extends MusicBeatState
 		}
 		#end
 		if(endingSong) {
-			endSong();
+			startDialogue(dialogueJson);
 		} else {
-			startCountdown();
+			startDialogue(dialogueJson);
 		}
 	}
 
@@ -2347,6 +2359,11 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+		if (dad.animation.curAnim.name.startsWith('idle')) {
+			dadnoteMovementYoffset = 0;
+			dadnoteMovementXoffset = 0;
+		}
+
 		if (generatedMusic)
 		{
 			var fakeCrochet:Float = (60 / SONG.bpm) * 1000;
@@ -2473,12 +2490,20 @@ class PlayState extends MusicBeatState
 						{
 							case 0:
 								animToPlay = 'singLEFT';
+								dadnoteMovementXoffset = -30;
+								dadnoteMovementYoffset = 0;
 							case 1:
 								animToPlay = 'singDOWN';
+								dadnoteMovementYoffset = 30;
+								dadnoteMovementXoffset = 0;
 							case 2:
 								animToPlay = 'singUP';
+								dadnoteMovementYoffset = -30;
+								dadnoteMovementXoffset = 0;
 							case 3:
 								animToPlay = 'singRIGHT';
+								dadnoteMovementXoffset = 30;
+								dadnoteMovementYoffset = 0;
 						}
 						dad.playAnim(animToPlay + altAnim, true);
 					}
@@ -3013,7 +3038,7 @@ class PlayState extends MusicBeatState
 	public function moveCamera(isDad:Bool) {
 		var songName:String = Paths.formatToSongPath(SONG.song);
 		if(isDad) {
-			camFollow.set(dad.getMidpoint().x + 150, dad.getMidpoint().y - 100);
+			camFollow.set(dad.getMidpoint().x + 150 + dadnoteMovementXoffset, dad.getMidpoint().y - 100 + dadnoteMovementYoffset);
 			camFollow.x += dad.cameraPosition[0];
 			camFollow.y += dad.cameraPosition[1];
 
@@ -3022,28 +3047,26 @@ class PlayState extends MusicBeatState
 				tweenCamIn();
 			}
 		} else {
-			camFollow.set(boyfriend.getMidpoint().x - 100, boyfriend.getMidpoint().y - 100);
+			camFollow.set(boyfriend.getMidpoint().x - 100 + bfnoteMovementXoffset, boyfriend.getMidpoint().y - 100 + bfnoteMovementYoffset);
 
 			switch (curStage)
-			{
-				case 'limo':
-					camFollow.x = boyfriend.getMidpoint().x - 300;
-				case 'mall':
-					camFollow.y = boyfriend.getMidpoint().y - 200;
-				case 'school' | 'schoolEvil':
-					camFollow.x = boyfriend.getMidpoint().x - 200;
-					camFollow.y = boyfriend.getMidpoint().y - 200;
+			{	
 				case 'stageDay':
-					camFollow.y = boyfriend.getMidpoint().y - 200;
+					camFollow.y = boyfriend.getMidpoint().y - 200 + bfnoteMovementYoffset;
 				case 'stageAfternoon':
-					camFollow.y = boyfriend.getMidpoint().y - 200;
+					camFollow.y = boyfriend.getMidpoint().y - 200 + bfnoteMovementYoffset;
 				case 'stageNight':
-					camFollow.y = boyfriend.getMidpoint().y - 200;
+					camFollow.y = boyfriend.getMidpoint().y - 200 + bfnoteMovementYoffset;
 				case 'stageNightDark':
-					camFollow.y = boyfriend.getMidpoint().y - 200;
+					camFollow.y = boyfriend.getMidpoint().y - 200 + bfnoteMovementYoffset;
 				case 'stageDark':
-					camFollow.y = boyfriend.getMidpoint().y - 200;
+					camFollow.y = boyfriend.getMidpoint().y - 200 + bfnoteMovementYoffset;
 			}
+			if (boyfriend.animation.curAnim.name.startsWith('idle')) {
+				bfnoteMovementYoffset = 0;
+				bfnoteMovementXoffset = 0;
+			}
+
 			camFollow.x -= boyfriend.cameraPosition[0];
 			camFollow.y += boyfriend.cameraPosition[1];
 
@@ -3605,48 +3628,83 @@ class PlayState extends MusicBeatState
 		}
 	}
 
+	public function healthbarshake(intensity:Float)
+		{
+		new FlxTimer().start(0.01, function(tmr:FlxTimer)
+			{
+				iconP1.y += (10 * intensity);
+				iconP2.y += (10 * intensity);
+				healthBar.y += (10 * intensity);
+				healthBarBG.y += (10 * intensity);
+			});
+			new FlxTimer().start(0.05, function(tmr:FlxTimer)
+			{
+				iconP1.y -= (15 * intensity);
+				iconP2.y -= (15 * intensity);
+				healthBar.y -= (15 * intensity);
+				healthBarBG.y -= (15 * intensity);
+			});
+			new FlxTimer().start(0.10, function(tmr:FlxTimer)
+			{
+				iconP1.y += (8 * intensity);
+				iconP2.y += (8 * intensity);
+				healthBar.y += (8 * intensity);
+				healthBarBG.y += (8 * intensity);
+			});
+			new FlxTimer().start(0.15, function(tmr:FlxTimer)
+			{
+				iconP1.y -= (5 * intensity);
+				iconP2.y -= (5 * intensity);
+				healthBar.y -= (5 * intensity);
+				healthBarBG.y -= (5 * intensity);
+			});
+			new FlxTimer().start(0.20, function(tmr:FlxTimer)
+			{
+				iconP1.y += (3 * intensity);
+				iconP2.y += (3 * intensity);
+				healthBar.y += (3 * intensity);
+				healthBarBG.y += (3 * intensity);
+			});
+			new FlxTimer().start(0.25, function(tmr:FlxTimer)
+			{
+				iconP1.y -= (1 * intensity);
+				iconP2.y -= (1 * intensity);
+				healthBar.y -= (1 * intensity);
+				healthBarBG.y -= (1 * intensity);
+			});
+		}
+
+	public var debugCommandsText:FlxText;
+	private var holyMisses:Int = 1;
+	public var godmodecheat:Bool = false;
+	public var allowBFanimupdate = true;
+	public var deathByHurtNote:Bool = false;
+
+	function hurtNote()
+		{
+			allowBFanimupdate = false;
+			healthbarshake(3.0);
+			deathByHurtNote = true;
+			health -= 0.06; 
+			dad.playAnim('singUP-alt', true);
+			FlxG.camera.shake(0.02, 0.2);
+			FlxTween.color(healthBar, .20, FlxColor.YELLOW, FlxColor.WHITE, {ease: FlxEase.quadOut});
+			FlxTween.color(iconP1, .20, FlxColor.YELLOW, FlxColor.WHITE, {ease: FlxEase.quadOut});
+			FlxTween.color(iconP2, .20, FlxColor.YELLOW, FlxColor.WHITE, {ease: FlxEase.quadOut});
+			new FlxTimer().start(0.1, function(tmr:FlxTimer)
+				{
+					deathByHurtNote = false;
+				});
+		}
+
 	function goodNoteHit(note:Note):Void
 	{
 		if (!note.wasGoodHit)
 		{
 			switch(note.noteType) {
 				case 'Hurt Note': //Hurt note
-					if(cpuControlled) return;
-
-					if(!boyfriend.stunned)
-					{
-						noteMiss(note.noteData);
-						if(!endingSong)
-						{
-							--songMisses;
-							RecalculateRating();
-							if(!note.isSustainNote) {
-								health -= 0.26; //0.26 + 0.04 = -0.3 (-15%) of HP if you hit a hurt note
-								if(!note.noteSplashDisabled) {
-									spawnNoteSplashOnNote(note);
-								}
-							}
-							else health -= 0.06; //0.06 + 0.04 = -0.1 (-5%) of HP if you hit a hurt sustain note
-	
-							if(boyfriend.animation.getByName('hurt') != null) {
-								FlxG.sound.play(Paths.sound('soundElectric', 'shared'), 1);
-								FlxG.camera.shake(0.15, 0.15);
-								boyfriend.playAnim('hurt', true);
-								boyfriend.specialAnim = true;
-							}
-						}
-
-						note.wasGoodHit = true;
-						vocals.volume = 0;
-
-						if (!note.isSustainNote)
-						{
-							note.kill();
-							notes.remove(note, true);
-							note.destroy();
-						}
-					}
-					return;
+				boyfriend.playAnim('hurt', true);
+					hurtNote();
 			}
 
 			if (!note.isSustainNote)
@@ -3665,12 +3723,20 @@ class PlayState extends MusicBeatState
 			{
 				case 0:
 					animToPlay = 'singLEFT';
+					bfnoteMovementXoffset = -30;
+					bfnoteMovementYoffset = 0;
 				case 1:
 					animToPlay = 'singDOWN';
+					bfnoteMovementYoffset = 30;
+					bfnoteMovementXoffset = 0;
 				case 2:
 					animToPlay = 'singUP';
+					bfnoteMovementYoffset = -30;
+					bfnoteMovementXoffset = 0;
 				case 3:
 					animToPlay = 'singRIGHT';
+					bfnoteMovementXoffset = 30;
+					bfnoteMovementYoffset = 0;
 			}
 			boyfriend.playAnim(animToPlay + daAlt, true);
 			if(note.noteType == 'Hey!') {
