@@ -9,6 +9,8 @@ import flixel.FlxSprite;
 import flixel.addons.display.FlxGridOverlay;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.group.FlxGroup.FlxTypedGroup;
+import flixel.addons.effects.chainable.FlxGlitchEffect;
+import flixel.addons.effects.chainable.FlxEffectSprite;
 import flixel.math.FlxMath;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
@@ -27,6 +29,7 @@ class FreeplayState extends MusicBeatState
 	var selector:FlxText;
 	private static var curSelected:Int = 0;
 	private static var curDifficulty:Int = 1;
+	public static var coolGlitch:FlxSprite;
 
 	var scoreBG:FlxSprite;
 	var scoreText:FlxText;
@@ -92,6 +95,14 @@ class FreeplayState extends MusicBeatState
 		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
+
+		var glitchEffect = new FlxGlitchEffect(17,16,0.1,FlxGlitchDirection.HORIZONTAL);
+		var glitchSprite = new FlxEffectSprite(bg, [glitchEffect]);
+		coolGlitch = glitchSprite;
+		add(coolGlitch);
+		coolGlitch.x = bg.x;
+		coolGlitch.y = bg.y;
+		coolGlitch.visible = false;
 
 		grpSongs = new FlxTypedGroup<Alphabet>();
 		add(grpSongs);
@@ -200,9 +211,16 @@ class FreeplayState extends MusicBeatState
 	private static var vocals:FlxSound = null;
 	override function update(elapsed:Float)
 	{
-		if (FlxG.sound.music.volume < 0.7)
+		if (songs[curSelected].songName == 'Hungry Dark'){
+			coolGlitch.visible = true;
+		}
+		else
 		{
-			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
+			coolGlitch.visible = false;
+			if (FlxG.sound.music.volume < 0.7)
+			{
+				FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
+			}
 		}
 
 		lerpScore = Math.floor(FlxMath.lerp(lerpScore, intendedScore, CoolUtil.boundTo(elapsed * 24, 0, 1)));
@@ -330,6 +348,19 @@ class FreeplayState extends MusicBeatState
 		PlayState.storyDifficulty = curDifficulty;
 		diffText.text = '< ' + CoolUtil.difficultyString() + ' >';
 		positionHighscore();
+
+		switch (curDifficulty)
+		{
+			case 0:
+				diffText.text = "< EASY >";
+				diffText.color = FlxColor.LIME;
+			case 1:
+				diffText.text = '< NORMAL >';
+				diffText.color = FlxColor.YELLOW;
+			case 2:
+				diffText.text = "< HARD >";
+				diffText.color = FlxColor.RED;
+		}
 	}
 
 	function changeSelection(change:Int = 0)

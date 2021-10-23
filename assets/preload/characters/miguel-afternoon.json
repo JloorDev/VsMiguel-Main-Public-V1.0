@@ -140,6 +140,17 @@
 			"anim": "singUP-alt",
 			"loop": false,
 			"name": "MiguelElectric"
+		},
+		{
+			"offsets": [
+				79,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "Electric",
+			"loop": false,
+			"name": "MiguelElectric"
 		}
 	],
 	"no_antialiasing": false,

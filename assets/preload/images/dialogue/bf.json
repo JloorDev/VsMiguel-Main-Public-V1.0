@@ -58,6 +58,19 @@
 			],
 			"idle_name": "BF SHOCK0",
 			"loop_name": "BF SHOCK LOOP"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "confused",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "BF CONFUSED LOOP",
+			"idle_name": "BF CONFUSED0"
 		}
 	]
 }

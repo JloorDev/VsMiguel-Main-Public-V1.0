@@ -2,45 +2,290 @@
 	"dialogue": [
 		{
 			"expression": "talk",
-			"text": "Hey que hay Miguel",
+			"text": "**BF and GF are walking in the city streets on a normal day**",
 			"boxState": "normal",
-			"portrait": "bf",
-			"speed": 0.05
+			"portrait": "narrator",
+			"speed": 0.03
 		},
 		{
-			"expression": "MiguelText",
-			"text": "Nada enanito",
+			"expression": "talk",
+			"text": "Hey BF, it's good to spend time together on a quiet day",
 			"boxState": "normal",
-			"portrait": "miguel",
-			"speed": 0.05
+			"portrait": "gf",
+			"speed": 0.03
 		},
 		{
-			"expression": "annoyed",
-			"text": "que te pasa mmv",
-			"boxState": "angry",
+			"expression": "talk",
+			"text": "Beep bop",
+			"boxState": "normal",
 			"portrait": "bf",
-			"speed": 0.05
+			"speed": 0.03
+		},
+		{
+			"expression": "talk",
+			"text": "I have thought about going to the city center",
+			"boxState": "normal",
+			"portrait": "gf",
+			"speed": 0.03
+		},
+		{
+			"expression": "excited",
+			"text": "When we are there we will think what to do today",
+			"boxState": "normal",
+			"portrait": "gf",
+			"speed": 0.03
+		},
+		{
+			"expression": "talk",
+			"text": "beep!",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.03
+		},
+		{
+			"expression": "talk",
+			"text": "**GF and BF keep walking down the main street but GF is distracted by a sign**",
+			"boxState": "normal",
+			"portrait": "narrator",
+			"speed": 0.03
+		},
+		{
+			"expression": "talk",
+			"text": "Oh, I haven't seen this here, and I pass by here every day",
+			"boxState": "normal",
+			"portrait": "gf",
+			"speed": 0.03
+		},
+		{
+			"expression": "talk",
+			"text": "Bop?",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.03
+		},
+		{
+			"expression": "talk",
+			"text": "The poster has written -MiguelTale- it seems to have a note attached",
+			"boxState": "normal",
+			"speed": 0.035,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "**GF grab the note**",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "narrator"
+		},
+		{
+			"expression": "talk",
+			"text": "The note has written -Visit the wonderful town of MiguelTale, here the address-",
+			"boxState": "normal",
+			"speed": 0.035,
+			"portrait": "gf"
+		},
+		{
+			"expression": "excited",
+			"text": "I've never heard of that place, it would be exciting to visit!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "pissed",
+			"text": "Beep bop bap!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "**GF and BF follow the direction until they reach a path entering the forest** ",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "narrator"
+		},
+		{
+			"expression": "talk",
+			"text": "Well it seems that it is around here, I can see some houses",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "Bep?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Look, there are people grouped in the center",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "**GF and BF observe**",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "narrator"
+		},
+		{
+			"expression": "MiguelHappy",
+			"text": "Thanks to all who came, today we are going to celebrate the first anniversary of my town!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "I'm the mayor, I know I'm young too, but that's the way it is",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
 		},
 		{
 			"expression": "MiguelSmugsmile",
-			"text": "Soy gey",
+			"text": "Today I will sing to celebrate all this",
 			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "Bip!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "confused",
+			"text": "Oh no",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "MiguelConfused",
+			"text": "Ah?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "MiguelHappy",
+			"text": "Oh, hello visitors!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "You two come to see the anniversary of my town?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "Yeah",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "MiguelHappy",
+			"text": "Great!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "Bip bop beep",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "MiguelConfused",
+			"text": "Ah?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "MiguelConfused",
+			"text": "What are you saying?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "My boyfriend challenges you to a rap battle",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "Bep!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "MiguelTirednormal",
+			"text": "Oh...",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "MiguelPensive",
+			"text": "...",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"speed": 0.03,
 			"portrait": "miguel",
-			"speed": 0.05
+			"boxState": "normal",
+			"expression": "MiguelText",
+			"text": "Now that I think about it, that would be great for the anniversary"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "nelson",
+			"speed": 0.03,
+			"portrait": "gf",
 			"boxState": "normal",
-			"expression": "talk",
-			"text": "Que gey la verda"
+			"expression": "excited",
+			"text": "Cool!"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "daria",
+			"speed": 0.03,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"expression": "MiguelSmugsmile",
+			"text": "(I will repair the machine later, this is more exciting)"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "miguel",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "confirmo"
+			"text": "Are you ready, blue boy?"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Beep!"
 		}
 	]
 }
