@@ -1,0 +1,193 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.04,
+			"portrait": "nelson",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "..."
+		},
+		{
+			"speed": 0.035,
+			"portrait": "nelson",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "You did it very good"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Bip?"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "nelson",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "I just wanted to see how good you are at singing (although I had already seen it when he sang with Miguel)"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "That good"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bip bop"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "nelson",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Sorry for telling you shorty, even though it was fun"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bop beep..."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "nelson",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Anyway, Miguel is coming"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "narrator",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "**Miguel leaves his laboratory**"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"expression": "MiguelHappy",
+			"text": "Hello again!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"expression": "MiguelSmugsmile",
+			"text": "I managed to repair the machine after much effort"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"expression": "MiguelText",
+			"text": "That means that my town can go back to where it was before"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "That's great!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bip bop beep!"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "nelson",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I can't wait to go home to lock myself in my room and never ever get out of there"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "narrator",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "**Nelson goes to the public**"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"expression": "MiguelConfused",
+			"text": "Ehh... yeah?"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"expression": "MiguelSadslime",
+			"text": "Well I think we're going now"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Oh, well it's really late, I think we're leaving too"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bip bop"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"expression": "MiguelSadslime",
+			"text": "Too bad, I would have liked to sing the last song I had prepared"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"expression": "MiguelSmugsmile",
+			"text": "Maybe next time"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Let's hope"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "Beep"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"expression": "MiguelHappy",
+			"text": "See you later!"
+		}
+	]
+}

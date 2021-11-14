@@ -3,7 +3,7 @@ local xx = 500;
 local yy = 1280;
 local xx2 = 1050;
 local yy2 = 1280;
-local ofs = 50;
+local ofs = 80;
 local followchars = true;
 local del = 0;
 local del2 = 0;
@@ -61,6 +61,9 @@ function onUpdate()
             end
             if getProperty('boyfriend.animation.curAnim.name') == 'singDOWN' then
                 triggerEvent('Camera Follow Pos',xx2,yy2+ofs)
+            end
+ 	    if getProperty('boyfriend.animation.curAnim.name') == 'idle' then
+                triggerEvent('Camera Follow Pos',xx2,yy2)
             end
         end
     else

@@ -1,0 +1,137 @@
+{
+	"dialogue": [
+		{
+			"expression": "MiguelTirednormal",
+			"text": "Wow, you're really good at this, it's awesome",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "Beep bop!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "My boyfriend is already an expert on this",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "MiguelSmugsmile",
+			"text": "That's great!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "Well, I think I'll go into my lab to see something",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "...?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "Bip?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "MiguelTirednormal",
+			"text": "Oh, I forgot to mention it",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "A few days ago I found a strange machine near my house, so I put it in my house to repair it",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "MiguelConfused",
+			"text": "When I repaired it and turned it on but a strange light appeared and teleported my people to this place",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "Oh, and how can we help?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "MiguelTirednormal",
+			"text": "Do not worry, I can repair it alone",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "MiguelSmugsmile",
+			"text": "Now that I think about it I have a lot of time, is better to repair the machine later, now I want to continue \r\rsinging",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "Ok",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "MiguelText",
+			"text": "Hey little man",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "Bip?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "MiguelSmugsmile",
+			"text": "I have a surprise in this song, I hope you're ready!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "Beep!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "MiguelSmugsmile",
+			"text": "It's time for the little challenge\r",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		}
+	]
+}

@@ -1,0 +1,347 @@
+{
+	"dialogue": [
+		{
+			"expression": "shocked",
+			"text": "**Scared beep boops noises**",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "MiguelTiredSad",
+			"text": "Ouch... my head...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "confused",
+			"text": "Hey mayor, are you okay?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "MiguelTirednormal",
+			"text": "Oh... yeah!",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "MiguelConfused",
+			"text": "My head only hurts a little...",
+			"boxState": "normal",
+			"speed": 0.045,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "Oh don't worry, you'll get better",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "Beep!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "MiguelTirednormal",
+			"text": "Is good that you two worry but...",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "MiguelConfused",
+			"text": "What happened...?",
+			"boxState": "normal",
+			"speed": 0.035,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "confused",
+			"text": "You do not remember?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "MiguelTirednormal",
+			"text": "Nope.",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "confused",
+			"text": "Beep bop bip bop!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "confused",
+			"text": "A demon came out of nowhere and threatened to eat us both while ati kept you useless as a puppet",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "MiguelPensive",
+			"text": "A demon...?",
+			"boxState": "normal",
+			"speed": 0.035,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "confused",
+			"text": "Beep!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Said her name was Daria",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "MiguelPensive",
+			"text": "So she came to this world too...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "You mean the demon?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "MiguelTirednormal",
+			"text": "Yes, it's a long story...",
+			"boxState": "normal",
+			"speed": 0.035,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "MiguelPensive",
+			"text": "Daria is a shadow demon who escaped hell in a way that I don't know...",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "MiguelTiredSad",
+			"text": "She is really evil and dangerous, more when she is hungry...",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "MiguelTiredSad",
+			"text": "She hides in the dark and hunts her prey, sometimes playing with them before killing them...",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "confused",
+			"text": "Beep...",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "So we have been saved, but it seemed that that creature knew you, why?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "MiguelPensive",
+			"text": "Daria follows me wherever I go, I am bound to be tormented by her...",
+			"boxState": "normal",
+			"speed": 0.035,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "MiguelTiredSad",
+			"text": "Forever... until I die for her or something else...",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "confused",
+			"text": "...",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "confused",
+			"text": "That's terrible, can't we do anything?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "MiguelTirednormal",
+			"text": "Don't worry, maybe I'll exaggerate the latter a bit",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "MiguelSmugsmile",
+			"text": "I've survived from her for a while, I'll be fine",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "confused",
+			"text": "I hope you are right",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "Beep!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "*Nelson arrives walking*",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "narrator"
+		},
+		{
+			"expression": "talk",
+			"text": "Hey, are you two still here?",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "nelson"
+		},
+		{
+			"expression": "talk",
+			"text": "Everyone has already gone home, they told me they liked the anniversary",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "nelson"
+		},
+		{
+			"expression": "talk",
+			"text": "Oh that's great, in a few seconds I'll teleport everything to our world",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "miguel"
+		},
+		{
+			"expression": "talk",
+			"text": "Ok, I'll wait at my house",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "nelson"
+		},
+		{
+			"expression": "talk",
+			"text": "*Nelson goes to his home*",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "narrator"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"expression": "MiguelTirednormal",
+			"text": "It seems that she erased everyone's memory"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I think they better forget what happened"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bip boop"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Listen"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"expression": "MiguelSadslime",
+			"text": "Thanks for helping me make this anniversary great and for beating Daria in the end"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "Beep bop~"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "No problem"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"expression": "MiguelSmugsmile",
+			"text": "Well I think I'm going to my world, but I'm going to visit this world a lot"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "We hope to see you soon, bye!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"expression": "MiguelHappy",
+			"text": "Bye!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "Beep!"
+		}
+	]
+}

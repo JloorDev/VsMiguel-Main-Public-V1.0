@@ -1,76 +1,76 @@
 {
-	"dialogue_pos": "left",
 	"position": [
 		280,
 		20
 	],
+	"dialogue_pos": "left",
 	"scale": 1.65,
+	"image": "Daria_dialogue",
 	"animations": [
 		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
 			"anim": "talk",
+			"idle_name": "Daria_Text",
+			"loop_name": "Daria_Text"
+		},
+		{
 			"loop_offsets": [
 				0,
 				0
 			],
-			"idle_offsets": [
-				-1,
-				-11
-			],
-			"loop_name": "Daria_Text",
-			"idle_name": "Daria_Text"
-		},
-		{
-			"loop_name": "Daria_Confused",
-			"idle_offsets": [
-				0,
-				0
-			],
-			"idle_name": "Daria_Confused",
 			"anim": "condused",
-			"loop_offsets": [
-				0,
-				0
-			]
-		},
-		{
-			"loop_name": "Daria_Andry",
 			"idle_offsets": [
 				0,
 				0
 			],
-			"idle_name": "Daria_Andry",
+			"loop_name": "Daria_Confused",
+			"idle_name": "Daria_Confused"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
 			"anim": "andry",
-			"loop_offsets": [
-				0,
-				0
-			]
-		},
-		{
-			"loop_name": "Daria_Horror",
 			"idle_offsets": [
 				0,
 				0
 			],
-			"idle_name": "Daria_Horror",
+			"loop_name": "Daria_Andry",
+			"idle_name": "Daria_Andry"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
 			"anim": "horror",
-			"loop_offsets": [
-				0,
-				0
-			]
-		},
-		{
-			"loop_name": "Daria_Smile",
 			"idle_offsets": [
 				0,
 				0
 			],
-			"idle_name": "Daria_Smile",
-			"anim": "smile",
+			"loop_name": "Daria_Horror",
+			"idle_name": "Daria_Horror"
+		},
+		{
 			"loop_offsets": [
 				0,
 				0
-			]
+			],
+			"anim": "smile",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "Daria_Smile",
+			"idle_name": "Daria_Smile"
 		}
-	],
-	"image": "Daria_dialogue"
+	]
 }

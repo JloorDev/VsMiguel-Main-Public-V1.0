@@ -2934,18 +2934,11 @@
 						""
 					],
 					[
-						53463.75,
-						-1,
-						"Hey!",
-						"",
-						""
-					],
-					[
 						53400,
 						-1,
-						"Hey!",
-						"",
-						""
+						"Change Character",
+						"2",
+						"gf"
 					]
 				],
 				"altAnim": true,
@@ -8204,6 +8197,42 @@
 			},
 			{
 				"lengthInSteps": 16,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"altAnim": false,
+				"bpm": 100,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 100
+			},
+			{
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 100
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 100,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
 				"sectionNotes": [],
@@ -8212,8 +8241,9 @@
 				"mustHitSection": true
 			}
 		],
-		"player3": "gf",
+		"player3": "gf-night",
 		"song": "Hungry Dark",
+		"arrowSkin": "",
 		"validScore": true,
 		"needsVoices": true,
 		"speed": 2.8,

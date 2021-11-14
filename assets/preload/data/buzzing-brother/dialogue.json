@@ -1,0 +1,249 @@
+{
+	"dialogue": [
+		{
+			"expression": "MiguelSmugsmile",
+			"text": "You make a good duet while you sing, you beat my little challenge!",
+			"boxState": "normal",
+			"portrait": "miguel",
+			"speed": 0.03
+		},
+		{
+			"expression": "MiguelSmugsmile",
+			"text": "Very impressive!",
+			"boxState": "normal",
+			"portrait": "miguel",
+			"speed": 0.03
+		},
+		{
+			"expression": "pissed",
+			"text": "*Beep bop of self compliment*",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.03
+		},
+		{
+			"expression": "excited",
+			"text": "Hahaha!",
+			"boxState": "normal",
+			"portrait": "gf",
+			"speed": 0.03
+		},
+		{
+			"expression": "MiguelHappy",
+			"text": "This was fun",
+			"boxState": "normal",
+			"portrait": "miguel",
+			"speed": 0.03
+		},
+		{
+			"expression": "MiguelSadslime",
+			"text": "But I think it's time to repair the machine, it's already night",
+			"boxState": "normal",
+			"portrait": "miguel",
+			"speed": 0.03
+		},
+		{
+			"expression": "talk",
+			"text": "Yeah",
+			"boxState": "normal",
+			"portrait": "gf",
+			"speed": 0.03
+		},
+		{
+			"expression": "MiguelTirednormal",
+			"text": "While I repair the machine I'm going to let my brother take care of the anniversary",
+			"boxState": "normal",
+			"portrait": "miguel",
+			"speed": 0.03
+		},
+		{
+			"expression": "MiguelHappy",
+			"text": "See you later!",
+			"boxState": "normal",
+			"portrait": "miguel",
+			"speed": 0.03
+		},
+		{
+			"expression": "talk",
+			"text": "**Miguel enters his laboratory**",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "narrator"
+		},
+		{
+			"expression": "talk",
+			"text": "Who will be the mayor's brother?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "Beep bop bip?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "**Someone appears from behind**",
+			"boxState": "normal",
+			"speed": 0.06,
+			"portrait": "narrator"
+		},
+		{
+			"expression": "talk",
+			"text": "It's me",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "nelson"
+		},
+		{
+			"expression": "shocked",
+			"text": "Bip?!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Are you the mayor's brother?",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "Yeah",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "nelson"
+		},
+		{
+			"expression": "talk",
+			"text": "And the mayor's name is Miguel so you know",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "nelson"
+		},
+		{
+			"expression": "talk",
+			"text": "I forgot to ask him name",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "Anyway, my name is Nelson",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "nelson"
+		},
+		{
+			"expression": "talk",
+			"text": "Hi, I'm my boyfriend's girlfriend, I'm talking about this little guy",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "Bip bop beep!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "...",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "nelson"
+		},
+		{
+			"expression": "talk",
+			"text": "Your boyfriend is a dwarf?",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "nelson"
+		},
+		{
+			"expression": "confused",
+			"text": "Bip?!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "confused",
+			"text": "A",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "I didn't mean to offend, but you look like a dwarf",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "nelson"
+		},
+		{
+			"expression": "confused",
+			"text": "**Angry beep boops noises**",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "... *Sigh*",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "nelson"
+		},
+		{
+			"expression": "talk",
+			"text": "Well I gotta cheer on this anniversary so I'll sing now",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "nelson"
+		},
+		{
+			"expression": "talk",
+			"text": "So boy do you want a rap battle?",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "nelson"
+		},
+		{
+			"expression": "talk",
+			"text": "Boyfriend, just sing so that he respects you, it will be easy",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "Beep bop!",
+			"boxState": "normal",
+			"speed": 0.03,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "That I wanted to hear (although I did not understand anything)",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "nelson"
+		},
+		{
+			"expression": "talk",
+			"text": "Now get ready bluish dwarf",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "nelson"
+		}
+	]
+}

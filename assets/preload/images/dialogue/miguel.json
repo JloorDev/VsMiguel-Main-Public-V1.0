@@ -40,8 +40,8 @@
 			],
 			"anim": "MiguelCorrupt",
 			"idle_offsets": [
-				-25,
-				-20
+				-20,
+				-29
 			],
 			"loop_name": "Miguel_Corrupt",
 			"idle_name": "Miguel_Corrupt"
@@ -54,7 +54,7 @@
 			"anim": "MiguelTirednormal",
 			"idle_offsets": [
 				0,
-				0
+				-5
 			],
 			"loop_name": "Miguel_TiredNormal",
 			"idle_name": "Miguel_TiredNormal"
@@ -67,7 +67,7 @@
 			"anim": "MiguelTiredSad",
 			"idle_offsets": [
 				0,
-				0
+				-5
 			],
 			"loop_name": "Miguel_TiredSad",
 			"idle_name": "Miguel_TiredSad"
@@ -80,7 +80,7 @@
 			"anim": "MiguelConfused",
 			"idle_offsets": [
 				0,
-				0
+				-5
 			],
 			"loop_name": "Miguel_confused",
 			"idle_name": "Miguel_confused"
@@ -93,7 +93,7 @@
 			"anim": "MiguelHappy",
 			"idle_offsets": [
 				0,
-				0
+				-5
 			],
 			"loop_name": "Miguel_happy",
 			"idle_name": "Miguel_happy"
@@ -106,23 +106,23 @@
 			"anim": "MiguelSmugsmile",
 			"idle_offsets": [
 				0,
-				0
+				-5
 			],
 			"loop_name": "Miguel_smugsmile",
 			"idle_name": "Miguel_smugsmile"
 		},
 		{
-			"loop_name": "Miguel_Pensive",
 			"idle_offsets": [
 				0,
-				0
+				-5
 			],
-			"idle_name": "Miguel_Pensive",
 			"anim": "MiguelPensive",
 			"loop_offsets": [
 				0,
 				0
-			]
+			],
+			"idle_name": "Miguel_Pensive",
+			"loop_name": "Miguel_Pensive"
 		}
 	]
 }

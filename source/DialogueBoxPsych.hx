@@ -161,7 +161,8 @@ class DialogueCharacter extends FlxSprite
 class DialogueBoxPsych extends FlxSpriteGroup
 {
 	var dialogue:Alphabet;
-	var dialogueList:DialogueFile = null;
+	public var dialogueList:DialogueFile = null;
+	var dialogueListOld:Array<String> = [];
 
 	public var finishThing:Void->Void;
 	public var nextDialogueThing:Void->Void = null;
@@ -176,7 +177,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	var offsetPos:Float = -600;
 
 	var textBoxTypes:Array<String> = ['normal', 'angry'];
-	//var charPositionList:Array<String> = ['left', 'center', 'right'];
+	var cutFolder = 'cutscene_1';
 
 	public function new(dialogueList:DialogueFile, ?song:String = null)
 	{
@@ -186,10 +187,11 @@ class DialogueBoxPsych extends FlxSpriteGroup
 			FlxG.sound.playMusic(Paths.music(song), 0);
 			FlxG.sound.music.fadeIn(2, 0, 1);
 		}
+		var prop = CoolUtil.coolTextFile(Paths.txt(PlayState.SONG.song.toLowerCase() + '/prop'));
+		cutFolder = prop[0];
 		
-		bgFade = new FlxSprite(-500, -500).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.WHITE);
+		bgFade = new FlxSprite(0, 0).makeGraphic(100, 100);
 		bgFade.scrollFactor.set();
-		bgFade.visible = true;
 		bgFade.alpha = 0;
 		add(bgFade);
 
@@ -279,8 +281,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	override function update(elapsed:Float)
 	{
 		if(!dialogueEnded) {
-			bgFade.alpha += 0.5 * elapsed;
-			if(bgFade.alpha > 0.5) bgFade.alpha = 0.5;
+			bgFade.alpha += 1.3 * elapsed;
+			if(bgFade.alpha > 1.3) bgFade.alpha = 1.3;
 
 			if(PlayerSettings.player1.controls.ACCEPT) {
 				if(!daText.finishedText) {
@@ -390,7 +392,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 			}
 
 			if(bgFade != null) {
-				bgFade.alpha -= 0.5 * elapsed;
+				bgFade.alpha -= 1.3 * elapsed;
 				if(bgFade.alpha <= 0) {
 					bgFade.kill();
 					remove(bgFade);
@@ -435,6 +437,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	var lastBoxType:String = '';
 	function startNextDialog():Void
 	{
+		var splitName:Array<String> = dialogueListOld[0].split(":");
 		var curDialogue:DialogueLine = null;
 		do {
 			curDialogue = dialogueList.dialogue[currentText];
@@ -485,6 +488,13 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		textToType = curDialogue.text;
 		daText = new Alphabet(DEFAULT_TEXT_X, DEFAULT_TEXT_Y, textToType, false, true, curDialogue.speed, 0.7);
 		add(daText);
+
+		bgFade.loadGraphic(Paths.image('cutscenes/' + cutFolder + '/' + splitName[0]));
+		bgFade.setGraphicSize(FlxG.width);
+		bgFade.updateHitbox();
+		bgFade.screenCenter(X);
+		bgFade.screenCenter(Y);
+		bgFade.alpha = 1;
 
 		var char:DialogueCharacter = arrayCharacters[character];
 		if(char != null) {

@@ -114,7 +114,7 @@
 		},
 		{
 			"expression": "talk",
-			"text": "Bep?",
+			"text": "Beep?",
 			"boxState": "normal",
 			"speed": 0.03,
 			"portrait": "bf"
@@ -233,7 +233,7 @@
 		},
 		{
 			"expression": "talk",
-			"text": "Bep!",
+			"text": "Beep!",
 			"boxState": "normal",
 			"speed": 0.03,
 			"portrait": "bf"
@@ -253,39 +253,39 @@
 			"portrait": "miguel"
 		},
 		{
-			"speed": 0.03,
-			"portrait": "miguel",
-			"boxState": "normal",
 			"expression": "MiguelText",
-			"text": "Now that I think about it, that would be great for the anniversary"
+			"text": "Now that I think about it, that would be great for the anniversary",
+			"boxState": "normal",
+			"portrait": "miguel",
+			"speed": 0.03
 		},
 		{
-			"speed": 0.03,
-			"portrait": "gf",
-			"boxState": "normal",
 			"expression": "excited",
-			"text": "Cool!"
+			"text": "Cool!",
+			"boxState": "normal",
+			"portrait": "gf",
+			"speed": 0.03
 		},
 		{
-			"speed": 0.03,
-			"portrait": "miguel",
-			"boxState": "normal",
 			"expression": "MiguelSmugsmile",
-			"text": "(I will repair the machine later, this is more exciting)"
-		},
-		{
-			"speed": 0.03,
+			"text": "(I will repair the machine later, this is more exciting)",
+			"boxState": "normal",
 			"portrait": "miguel",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": "Are you ready, blue boy?"
+			"speed": 0.03
 		},
 		{
-			"speed": 0.03,
-			"portrait": "bf",
+			"expression": "MiguelText",
+			"text": "Are you ready, blue boy?",
 			"boxState": "normal",
-			"expression": "talk",
-			"text": "Beep!"
+			"portrait": "miguel",
+			"speed": 0.03
+		},
+		{
+			"expression": "excited",
+			"text": "Beep!",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.03
 		}
 	]
 }

@@ -1,37 +1,37 @@
 {
-	"dialogue_pos": "left",
 	"position": [
 		280,
 		20
 	],
+	"dialogue_pos": "left",
 	"scale": 1.65,
+	"image": "Nelson_dialogue",
 	"animations": [
 		{
-			"anim": "talk",
-			"loop_offsets": [
-				0,
-				0
-			],
 			"idle_offsets": [
 				-1,
 				-11
 			],
-			"loop_name": "Nelson_Text",
-			"idle_name": "Nelson_Text"
-		},
-		{
-			"loop_name": "Nelson_Happy",
-			"idle_offsets": [
-				0,
-				0
-			],
-			"idle_name": "Nelson_Happy",
-			"anim": "happy",
 			"loop_offsets": [
 				0,
 				0
-			]
+			],
+			"anim": "talk",
+			"idle_name": "Nelson_Text",
+			"loop_name": "Nelson_Text"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "happy",
+			"idle_offsets": [
+				-1,
+				-11
+			],
+			"loop_name": "Nelson_Happy",
+			"idle_name": "Nelson_Happy"
 		}
-	],
-	"image": "Nelson_dialogue"
+	]
 }

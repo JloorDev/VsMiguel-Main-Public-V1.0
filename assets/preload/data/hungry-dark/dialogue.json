@@ -1,0 +1,263 @@
+{
+	"dialogue": [
+		{
+			"expression": "andry",
+			"text": "It seems the mice fell into my dark trap",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.045
+		},
+		{
+			"expression": "shocked",
+			"text": "Bip?!",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.03
+		},
+		{
+			"expression": "talk",
+			"text": "...",
+			"boxState": "normal",
+			"portrait": "gf",
+			"speed": 0.03
+		},
+		{
+			"expression": "confused",
+			"text": "(Now I understand why I felt a strange\\npresence close before)",
+			"boxState": "normal",
+			"portrait": "gf",
+			"speed": 0.03
+		},
+		{
+			"expression": "talk",
+			"text": "I was waiting in the dark for my prey to come here",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.045
+		},
+		{
+			"expression": "smile",
+			"text": "And it seems that you two saw my little decoy in the city",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.045
+		},
+		{
+			"expression": "talk",
+			"text": "Oh no",
+			"boxState": "normal",
+			"portrait": "gf",
+			"speed": 0.03
+		},
+		{
+			"expression": "confused",
+			"text": "Beep...",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.03
+		},
+		{
+			"expression": "talk",
+			"text": "The mayor entertained you two, didn't he?",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.045
+		},
+		{
+			"expression": "horror",
+			"text": "HA! WHAT AN IDIOT! BRINGING INNOCENT PEOPLE TO THEIR IMMEDIATE DEATH!",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.03
+		},
+		{
+			"expression": "confused",
+			"text": "...",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.03
+		},
+		{
+			"expression": "smile",
+			"text": "What do you think about that, stupid mayor?",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.045
+		},
+		{
+			"expression": "MiguelCorrupt",
+			"text": "...",
+			"boxState": "normal",
+			"portrait": "miguel",
+			"speed": 0.06
+		},
+		{
+			"expression": "MiguelCorrupt",
+			"text": "What...? who I am...?",
+			"boxState": "normal",
+			"portrait": "miguel",
+			"speed": 0.06
+		},
+		{
+			"expression": "condused",
+			"text": "...",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.045
+		},
+		{
+			"expression": "andry",
+			"text": "Hahaha, look at him, he can't even think under my control anymore!",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.045
+		},
+		{
+			"expression": "horror",
+			"text": "IT WOULD BE SO EASY TO KILL HIM AND EAT IT FIRST!",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.03
+		},
+		{
+			"expression": "pissed",
+			"text": "Beep bip bop!",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.03
+		},
+		{
+			"expression": "andry",
+			"text": "What an annoying noise!?",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.045
+		},
+		{
+			"expression": "talk",
+			"text": "Beep!",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.03
+		},
+		{
+			"expression": "andry",
+			"text": "I want to kill you now first just for that, you piece of meat!",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.045
+		},
+		{
+			"expression": "talk",
+			"text": "My boyfriend challenges you to a rap battle",
+			"boxState": "normal",
+			"portrait": "gf",
+			"speed": 0.03
+		},
+		{
+			"expression": "condused",
+			"text": "What?",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.045
+		},
+		{
+			"expression": "condused",
+			"text": "A rap battle...?",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.045
+		},
+		{
+			"expression": "horror",
+			"text": "HAHAHA, IS THIS A KIND OF JOKE?!",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.03
+		},
+		{
+			"expression": "confused",
+			"text": "Beep bop!",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.03
+		},
+		{
+			"expression": "talk",
+			"text": "And he says that you release the mayor and leave us alone",
+			"boxState": "normal",
+			"portrait": "gf",
+			"speed": 0.03
+		},
+		{
+			"expression": "condused",
+			"text": "*Growls*",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.045
+		},
+		{
+			"expression": "MiguelCorrupt",
+			"text": "I like to sing...",
+			"boxState": "normal",
+			"portrait": "miguel",
+			"speed": 0.06
+		},
+		{
+			"expression": "condused",
+			"text": "...",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Actually...",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.045
+		},
+		{
+			"expression": "andry",
+			"text": "I like to play with my prey before eating them!",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.04
+		},
+		{
+			"expression": "smile",
+			"text": "Me, Daria, I'm going to beat that piece of human scum!",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.04
+		},
+		{
+			"expression": "andry",
+			"text": "I don't promise anything, but if your boyfriend loses...",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.045
+		},
+		{
+			"expression": "horror",
+			"text": "I'M GOING TO OPEN HIS HEAD AND SHRED EVERY PART OF HIS BODY WHILE I EAT HIS ENTIRE ORGANS!!",
+			"boxState": "normal",
+			"portrait": "daria",
+			"speed": 0.03
+		},
+		{
+			"expression": "talk",
+			"text": "We'll see if it's true",
+			"boxState": "normal",
+			"portrait": "gf",
+			"speed": 0.03
+		},
+		{
+			"expression": "confused",
+			"text": "Beep!",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.03
+		}
+	]
+}
