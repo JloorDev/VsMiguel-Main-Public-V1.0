@@ -174,6 +174,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	var bgFade:FlxSprite = null;
 	var box:FlxSprite;
 	var textToType:String = '';
+	var skipText:FlxText;
 
 	var arrayCharacters:Array<DialogueCharacter> = [];
 
@@ -185,8 +186,9 @@ class DialogueBoxPsych extends FlxSpriteGroup
 
 	public function new(dialogueList:DialogueFile, ?song:String = null)
 	{
-		cutscenes1 = Cutscenes.cutscenes1(ClientPrefs.cutscenes);
-		cutscenes2 = Cutscenes.cutscenes2(ClientPrefs.cutscenes);
+		//cutscenes1 = Cutscenes.cutscenes1(!ClientPrefs.cutscenes);
+		//cutscenes2 = Cutscenes.cutscenes2(!ClientPrefs.cutscenes);
+
 		super();
 
 		if(song != null && song != '') {
@@ -197,6 +199,22 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		cutFolder = prop[0];
 		
 		bgFade = new FlxSprite(0, 0).makeGraphic(100, 100);
+		if (PlayState.SONG.song == "Anniversary")
+		{
+			bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/11', 'shared'));
+		}
+		if (PlayState.SONG.song == "Mayor Thunder")
+		{
+			bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
+		}
+		if (PlayState.SONG.song == "Buzzing Brother")
+		{
+			bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/2/0', 'shared'));
+		}
+		if (PlayState.SONG.song == "Hungry Dark")
+		{
+			bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/3/0', 'shared'));
+		}
 		bgFade.scrollFactor.set();
 		bgFade.alpha = 0;
 		add(bgFade);
@@ -221,6 +239,13 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		box.setGraphicSize(Std.int(box.width * 0.9));
 		box.updateHitbox();
 		add(box);
+
+		skipText = new FlxText(5, 692, 640, "Press SHIFT to Skip the dialogue.\n", 40);
+		skipText.scrollFactor.set(0, 0);
+		skipText.setFormat('Pixel Arial 11 Bold', 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		skipText.borderSize = 2;
+		skipText.borderQuality = 1;
+		add(skipText);
 
 		startNextDialog();
 	}
@@ -289,6 +314,9 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		if(!dialogueEnded) {
 			bgFade.alpha += 1.3 * elapsed;
 			if(bgFade.alpha > 1.3) bgFade.alpha = 1.3;
+
+			skipText.alpha += 1 * elapsed;
+			if(skipText.alpha > 1) skipText.alpha = 1;
 
 			if(PlayerSettings.player1.controls.ACCEPT) {
 				if(!daText.finishedText) {
@@ -407,6 +435,16 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				}
 			}
 
+			if(skipText != null) {
+				skipText.alpha -= 0.5 * elapsed;
+				if(skipText.alpha <= 0) {
+					skipText.kill();
+					remove(skipText);
+					skipText.destroy();
+					skipText = null;
+				}
+			}
+
 			for (i in 0...arrayCharacters.length) {
 				var leChar:DialogueCharacter = arrayCharacters[i];
 				if(leChar != null) {
@@ -436,6 +474,14 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				kill();
 			}
 		}
+
+		if (FlxG.keys.justPressed.SHIFT)
+		{
+			finishThing();
+			kill();
+			FlxG.sound.play(Paths.sound('dialogueClose'));
+		}
+
 		super.update(elapsed);
 	}
 

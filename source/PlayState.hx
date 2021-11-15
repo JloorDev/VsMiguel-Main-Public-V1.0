@@ -495,7 +495,6 @@ class PlayState extends MusicBeatState
 					mist.scrollFactor.set(0.9, 0.9);
 					mist.x += -100;
 					mist.y += 1300;
-					add(mist);
 					mist.kill();
 
 				case 'stageDark': //stageDark
@@ -1601,6 +1600,11 @@ class PlayState extends MusicBeatState
 						bottomBoppers.dance(true);
 						santa.dance(true);
 				}
+
+				if (curSong == "Hungry Dark")
+					{
+						add(mist);
+					}
 
 				switch (swagCounter)
 				{

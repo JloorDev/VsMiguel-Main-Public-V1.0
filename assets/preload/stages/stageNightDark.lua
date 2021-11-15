@@ -49,7 +49,6 @@ function onUpdate()
                 triggerEvent('Camera Follow Pos',xx,yy)
             end
         else
-
             if getProperty('boyfriend.animation.curAnim.name') == 'singLEFT' then
                 triggerEvent('Camera Follow Pos',xx2-ofs,yy2)
             end
