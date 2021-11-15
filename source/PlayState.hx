@@ -1178,7 +1178,7 @@ class PlayState extends MusicBeatState
 					startDialogue(dialogueJson);
 
 				case 'hungry-dark':
-					startDialogue(dialogueJson);
+					startVideoandDialogue('DariaAnimationStart');
 		
 				default:
 					startCountdown();

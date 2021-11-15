@@ -688,7 +688,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'Hide HUD',
 		'Hide Song Length',
 		'Flashing Lights',
-		'Camera Zooms'
+		'Camera Zooms',
+		'Cutscenes'
 		#if !mobile
 		,'FPS Counter'
 		#end
@@ -846,6 +847,9 @@ class PreferencesSubstate extends MusicBeatSubstate
 					case 'Note Splashes':
 						ClientPrefs.noteSplashes = !ClientPrefs.noteSplashes;
 
+					case 'Cutscenes':
+						ClientPrefs.cutscenes = !ClientPrefs.cutscenes;
+
 					case 'Flashing Lights':
 						ClientPrefs.flashing = !ClientPrefs.flashing;
 
@@ -969,6 +973,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 				daText = "If checked, hides most HUD elements.";
 			case 'Hide Song Length':
 				daText = "If checked, the bar showing how much time is left\nwill be hidden.";
+			case 'Cutscenes':
+				daText = "Disabled Cutscenes in the dialogue.";
 		}
 		descText.text = daText;
 
@@ -1041,6 +1047,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 						daValue = ClientPrefs.imagesPersist;
 					case 'Hide Song Length':
 						daValue = ClientPrefs.hideTime;
+					case 'Cutscenes':
+						daValue = ClientPrefs.cutscenes;
 				}
 				checkbox.daValue = daValue;
 			}

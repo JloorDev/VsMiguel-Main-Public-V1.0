@@ -12,6 +12,8 @@ import flixel.util.FlxTimer;
 import flixel.FlxSubState;
 import haxe.Json;
 import haxe.format.JsonParser;
+import openfl.display.BitmapData;
+import PlayState;
 #if sys
 import sys.FileSystem;
 import sys.io.File;
@@ -167,6 +169,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	public var finishThing:Void->Void;
 	public var nextDialogueThing:Void->Void = null;
 	public var skipDialogueThing:Void->Void = null;
+	public static var cutscenes1:BitmapData;
+	public static var cutscenes2:BitmapData;
 	var bgFade:FlxSprite = null;
 	var box:FlxSprite;
 	var textToType:String = '';
@@ -181,6 +185,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 
 	public function new(dialogueList:DialogueFile, ?song:String = null)
 	{
+		cutscenes1 = Cutscenes.cutscenes1(ClientPrefs.cutscenes);
+		cutscenes2 = Cutscenes.cutscenes2(ClientPrefs.cutscenes);
 		super();
 
 		if(song != null && song != '') {
@@ -489,12 +495,31 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		daText = new Alphabet(DEFAULT_TEXT_X, DEFAULT_TEXT_Y, textToType, false, true, curDialogue.speed, 0.7);
 		add(daText);
 
-		bgFade.loadGraphic(Paths.image('cutscenes/' + cutFolder + '/' + splitName[0]));
+		bgFade.loadGraphic(cutscenes1);
 		bgFade.setGraphicSize(FlxG.width);
 		bgFade.updateHitbox();
 		bgFade.screenCenter(X);
 		bgFade.screenCenter(Y);
 		bgFade.alpha = 1;
+
+		/*
+		if (PlayState.SONG.song.toLowerCase() == 'Buzzing Brother'){
+			bgFade.loadGraphic(cutscenes2);
+			bgFade.setGraphicSize(FlxG.width);
+			bgFade.updateHitbox();
+			bgFade.screenCenter(X);
+			bgFade.screenCenter(Y);
+			bgFade.alpha = 1;
+		}*/
+
+		if (PlayState.SONG.song.toLowerCase() == 'Hungry Dark'){
+			bgFade.loadGraphic(Paths.image('cutscenes/3/0', 'shared'));
+			bgFade.setGraphicSize(FlxG.width);
+			bgFade.updateHitbox();
+			bgFade.screenCenter(X);
+			bgFade.screenCenter(Y);
+			bgFade.alpha = 1;
+		}
 
 		var char:DialogueCharacter = arrayCharacters[character];
 		if(char != null) {
