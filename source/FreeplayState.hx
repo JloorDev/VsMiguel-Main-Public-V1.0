@@ -90,7 +90,7 @@ class FreeplayState extends MusicBeatState
 
 		// LOAD SONGS
 
-		addSong('The Bad Test', -99, 'miguel-bad', FlxColor.fromRGB(255, 235, 0));
+		addSong('The Bad Test', -99, 'miguel-bad', FlxColor.fromRGB(255, 204, 0));
 
 		// LOAD CHARACTERS
 
@@ -269,10 +269,10 @@ class FreeplayState extends MusicBeatState
 
 		if (FlxG.keys.justPressed.P)
 		{
-			var songFormat = StringTools.replace('Brother Sus', " ", "-");
-			var poop:String = Highscore.formatSong('Brother Sus', curDifficulty = 2);
+			var songFormat = StringTools.replace('Brother SUS', " ", "-");
+			var poop:String = Highscore.formatSong('Brother SUS', curDifficulty = 2);
 			curDifficulty = 2;	
-			PlayState.SONG = Song.loadFromJson(poop, 'Brother Sus');
+			PlayState.SONG = Song.loadFromJson(poop, 'Brother SUS');
 			PlayState.isStoryMode = false;
 			PlayState.storyDifficulty = curDifficulty = 2;
 			LoadingState.loadAndSwitchState(new PlayState());

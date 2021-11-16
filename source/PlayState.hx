@@ -211,6 +211,7 @@ class PlayState extends MusicBeatState
 	var peopleBad:FlxSprite;
 	var bgBad:BGSprite;
 	var stageBad:FlxSprite;
+	var bgSus:BGSprite;
 	var camLocked:Bool = true;
 
 	//public static var dadnoteMovementXoffset:Int = 0;
@@ -482,6 +483,10 @@ class PlayState extends MusicBeatState
 					people.x += 400;
 					people.y += 1100;
 					add(people);
+
+				case 'stageSus': //stageSus
+					bgSus = new BGSprite('vsMiguel/stageSus/BGRoomSUS', -304, -339);
+					add(bgSus);
 
 				case 'stageNightDark': //stageNightDark
 					GameOverSubstate.deathSoundName = 'fnf_dark_loss_sfx';

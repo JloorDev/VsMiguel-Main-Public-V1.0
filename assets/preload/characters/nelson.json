@@ -65,9 +65,9 @@
 	"healthicon": "nelson",
 	"flip_x": false,
 	"healthbar_colors": [
-		0,
-		204,
-		64
+		128,
+		255,
+		0
 	],
 	"camera_position": [
 		0,
