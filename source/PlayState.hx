@@ -1205,15 +1205,19 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 
 				case 'anniversary':
+					FlxG.sound.play(Paths.sound('DialogMusic'));
 					startDialogue(dialogueJson);
 
 				case 'mayor-thunder':
+					FlxG.sound.play(Paths.sound('DialogMusic'));
 					startDialogue(dialogueJson);
 
 				case 'buzzing-brother':
+					FlxG.sound.play(Paths.sound('DialogMusicBuzzingBrother'));
 					startDialogue(dialogueJson);
 
 				case 'hungry-dark':
+					FlxG.sound.play(Paths.sound('DialogMusicHundryDark'));
 					startVideoandDialogue('DariaAnimationStart');
 		
 				default:
