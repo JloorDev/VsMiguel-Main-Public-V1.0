@@ -267,7 +267,7 @@ class FreeplayState extends MusicBeatState
 			MusicBeatState.switchState(new MainMenuState());
 		}
 
-		if (FlxG.keys.justPressed.P)
+		/*if (FlxG.keys.justPressed.P)
 		{
 			var songFormat = StringTools.replace('Brother SUS', " ", "-");
 			var poop:String = Highscore.formatSong('Brother SUS', curDifficulty = 2);
@@ -276,7 +276,7 @@ class FreeplayState extends MusicBeatState
 			PlayState.isStoryMode = false;
 			PlayState.storyDifficulty = curDifficulty = 2;
 			LoadingState.loadAndSwitchState(new PlayState());
-		}
+		}*/
 
 		#if PRELOAD_ALL
 		if(space && instPlaying != curSelected)

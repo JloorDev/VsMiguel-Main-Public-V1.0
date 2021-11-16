@@ -242,13 +242,13 @@ class MainMenuState extends MusicBeatState
 					});
 				}
 			}
-			#if desktop
+			/*#if desktop
 			else if (FlxG.keys.justPressed.SEVEN)
 			{
 				selectedSomethin = true;
 				MusicBeatState.switchState(new MasterEditorMenu());
 			}
-			#end
+			#end*/
 		}
 
 		super.update(elapsed);
