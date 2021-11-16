@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="charactersbad.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="CharsBadAnimation0000" x="0" y="816" width="1400" height="405" frameX="0" frameY="-3" frameWidth="1400" frameHeight="409"/>
+	<SubTexture name="CharsBadAnimation0001" x="0" y="816" width="1400" height="405" frameX="0" frameY="-3" frameWidth="1400" frameHeight="409"/>
+	<SubTexture name="CharsBadAnimation0002" x="0" y="409" width="1398" height="407" frameX="-1" frameY="-2" frameWidth="1400" frameHeight="409"/>
+	<SubTexture name="CharsBadAnimation0003" x="0" y="409" width="1398" height="407" frameX="-1" frameY="-2" frameWidth="1400" frameHeight="409"/>
+	<SubTexture name="CharsBadAnimation0004" x="0" y="0" width="1397" height="409" frameX="-1" frameY="0" frameWidth="1400" frameHeight="409"/>
+	<SubTexture name="CharsBadAnimation0005" x="0" y="0" width="1397" height="409" frameX="-1" frameY="0" frameWidth="1400" frameHeight="409"/>
+	<SubTexture name="CharsBadAnimation0006" x="0" y="0" width="1397" height="409" frameX="-1" frameY="0" frameWidth="1400" frameHeight="409"/>
+	<SubTexture name="CharsBadAnimation0007" x="0" y="0" width="1397" height="409" frameX="-1" frameY="0" frameWidth="1400" frameHeight="409"/>
+	<SubTexture name="CharsBadAnimation0008" x="0" y="0" width="1397" height="409" frameX="-1" frameY="0" frameWidth="1400" frameHeight="409"/>
+	<SubTexture name="CharsBadAnimation0009" x="0" y="0" width="1397" height="409" frameX="-1" frameY="0" frameWidth="1400" frameHeight="409"/>
+	<SubTexture name="CharsBadAnimation0010" x="0" y="0" width="1397" height="409" frameX="-1" frameY="0" frameWidth="1400" frameHeight="409"/>
+	<SubTexture name="CharsBadAnimation0011" x="0" y="0" width="1397" height="409" frameX="-1" frameY="0" frameWidth="1400" frameHeight="409"/>
+	<SubTexture name="CharsBadAnimation0012" x="0" y="0" width="1397" height="409" frameX="-1" frameY="0" frameWidth="1400" frameHeight="409"/>
+	<SubTexture name="CharsBadAnimation0013" x="0" y="0" width="1397" height="409" frameX="-1" frameY="0" frameWidth="1400" frameHeight="409"/>
+</TextureAtlas>

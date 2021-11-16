@@ -1,0 +1,31 @@
+{
+	"storyName": "Mayor Of The Town Migueltale",
+	"hideFreeplay": false,
+	"weekBackground": "miguel",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"weekCharacters": [
+		"miguel",
+		"bf",
+		"gf"
+	],
+	"songs":  [
+		[
+
+			"The bad test",
+			"miguelbad",
+			[
+				255,
+				204,
+				0			
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "Week bad"
+}

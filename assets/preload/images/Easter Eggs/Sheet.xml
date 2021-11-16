@@ -1,7 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="Sheet.png">
-	<!-- Created with Adobe Animate version 20.0.0.17400 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Sheet0000" x="0" y="0" width="1972" height="445" frameX="0" frameY="-4" frameWidth="1972" frameHeight="449"/>
-	<SubTexture text="Today is a special day, it seems that the mayor is going to celebrate it in a few minutes, I will be there obviously, he is my friend anyway, also I think Nelson will be there, I would love to see him, it would be a good way to get closer him, maybe I could see him sing too?! This excites me a lot, today will be a great day..."/>
-</TextureAtlas>
+﻿"Today is a special day, it seems that the mayor is going to celebrate it in a few minutes,
+I will be there obviously, he is my friend anyway, also I think Nelson will be there, 
+I would love to see him, it would be a good way to get closer him, 
+maybe I could see him sing too?! This excites me a lot, today will be a great day..."

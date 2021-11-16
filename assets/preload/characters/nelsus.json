@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				-2,
+				-7
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "NelSUSIdle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				34,
+				-10
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "NelSUSLeft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				46,
+				-28
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "NelSUSDown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				179,
+				31
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "NelSUSUp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				47,
+				-10
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "NelSUSRight",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/NelSUS",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "nelsus",
+	"flip_x": false,
+	"healthbar_colors": [
+		0,
+		204,
+		64
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

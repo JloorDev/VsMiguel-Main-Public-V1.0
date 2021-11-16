@@ -208,6 +208,9 @@ class PlayState extends MusicBeatState
 	var bgDark:FlxSprite;
 	var people:FlxSprite;
 	var mist:FlxSprite;
+	var peopleBad:FlxSprite;
+	var bgBad:BGSprite;
+	var stageBad:FlxSprite;
 	var camLocked:Bool = true;
 
 	//public static var dadnoteMovementXoffset:Int = 0;
@@ -337,6 +340,8 @@ class PlayState extends MusicBeatState
 					curStage = 'stageNight';
 				case 'hungry-dark':
 					curStage = 'stageNightDark';
+				case 'the-bad-test':
+					curStage = 'stageBad';
 				default:
 					curStage = 'stage';
 			}
@@ -404,6 +409,32 @@ class PlayState extends MusicBeatState
 					people.x += 400;
 					people.y += 1100;
 					add(people);
+
+				case 'stageBad': //StageBad
+					GameOverSubstate.deathSoundName = 'fnf_loss_sfx';
+					GameOverSubstate.loopSoundName = 'gameOver';
+					GameOverSubstate.endSoundName = 'gameOverEnd';
+					GameOverSubstate.characterName = 'bf-bad';
+
+					bgBad = new BGSprite('vsMiguel/stageBad/bgbad', -304, -339, 1, 1);
+					bgBad.antialiasing = true;
+					add(bgBad);
+
+					peopleBad = new FlxSprite(-123, 230);
+					peopleBad.frames = Paths.getSparrowAtlas('vsMiguel/stageBad/charactersbad', 'shared');
+					peopleBad.animation.addByPrefix('idle', 'CharsBadAnimation', 24);
+					peopleBad.animation.play('idle');
+					peopleBad.scrollFactor.set(1, 1);
+					peopleBad.antialiasing = true;
+					add(peopleBad);
+
+					stageBad = new FlxSprite(-139, 0);
+					stageBad.frames = Paths.getSparrowAtlas('vsMiguel/stageBad/stagebad', 'shared');
+					stageBad.animation.addByPrefix('idle', 'StageBad', 24);
+					stageBad.animation.play('idle');
+					stageBad.scrollFactor.set(1, 1);
+					stageBad.antialiasing = true;
+					add(stageBad);
 
 				case 'stageAfternoon': //stageAfternoon
 					GameOverSubstate.deathSoundName = 'fnf_electric_loss_sfx';

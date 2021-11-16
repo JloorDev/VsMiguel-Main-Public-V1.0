@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="StageBadbad.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="StageBad0000" x="0" y="0" width="1726" height="905"/>
+	<SubTexture name="StageBad0001" x="0" y="0" width="1726" height="905"/>
+	<SubTexture name="StageBad0002" x="0" y="0" width="1726" height="905"/>
+	<SubTexture name="StageBad0003" x="0" y="0" width="1726" height="905"/>
+	<SubTexture name="StageBad0004" x="0" y="0" width="1726" height="905"/>
+	<SubTexture name="StageBad0005" x="0" y="0" width="1726" height="905"/>
+	<SubTexture name="StageBad0006" x="0" y="0" width="1726" height="905"/>
+	<SubTexture name="StageBad0007" x="1726" y="0" width="1726" height="905"/>
+	<SubTexture name="StageBad0008" x="1726" y="0" width="1726" height="905"/>
+	<SubTexture name="StageBad0009" x="1726" y="0" width="1726" height="905"/>
+	<SubTexture name="StageBad0010" x="1726" y="0" width="1726" height="905"/>
+	<SubTexture name="StageBad0011" x="1726" y="0" width="1726" height="905"/>
+	<SubTexture name="StageBad0012" x="1726" y="0" width="1726" height="905"/>
+	<SubTexture name="StageBad0013" x="1726" y="0" width="1726" height="905"/>
+	<SubTexture name="StageBad0014" x="0" y="905" width="1726" height="905"/>
+	<SubTexture name="StageBad0015" x="0" y="905" width="1726" height="905"/>
+	<SubTexture name="StageBad0016" x="0" y="905" width="1726" height="905"/>
+	<SubTexture name="StageBad0017" x="0" y="905" width="1726" height="905"/>
+	<SubTexture name="StageBad0018" x="0" y="905" width="1726" height="905"/>
+	<SubTexture name="StageBad0019" x="0" y="905" width="1726" height="905"/>
+	<SubTexture name="StageBad0020" x="0" y="905" width="1726" height="905"/>
+	<SubTexture name="StageBad0021" x="1726" y="905" width="1726" height="905"/>
+	<SubTexture name="StageBad0022" x="1726" y="905" width="1726" height="905"/>
+	<SubTexture name="StageBad0023" x="1726" y="905" width="1726" height="905"/>
+	<SubTexture name="StageBad0024" x="1726" y="905" width="1726" height="905"/>
+	<SubTexture name="StageBad0025" x="1726" y="905" width="1726" height="905"/>
+	<SubTexture name="StageBad0026" x="1726" y="905" width="1726" height="905"/>
+	<SubTexture name="StageBad0027" x="1726" y="905" width="1726" height="905"/>
+	<SubTexture name="StageBad0028" x="0" y="1810" width="1726" height="905"/>
+	<SubTexture name="StageBad0029" x="0" y="1810" width="1726" height="905"/>
+	<SubTexture name="StageBad0030" x="0" y="1810" width="1726" height="905"/>
+	<SubTexture name="StageBad0031" x="0" y="1810" width="1726" height="905"/>
+	<SubTexture name="StageBad0032" x="0" y="1810" width="1726" height="905"/>
+	<SubTexture name="StageBad0033" x="0" y="1810" width="1726" height="905"/>
+	<SubTexture name="StageBad0034" x="0" y="1810" width="1726" height="905"/>
+</TextureAtlas>

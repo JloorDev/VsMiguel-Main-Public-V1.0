@@ -88,7 +88,9 @@ class FreeplayState extends MusicBeatState
 			}
 		}
 
-		// LOAD MUSIC
+		// LOAD SONGS
+
+		addSong('The Bad Test', -99, 'miguel-bad', FlxColor.fromRGB(255, 235, 0));
 
 		// LOAD CHARACTERS
 
@@ -265,6 +267,17 @@ class FreeplayState extends MusicBeatState
 			MusicBeatState.switchState(new MainMenuState());
 		}
 
+		if (FlxG.keys.justPressed.P)
+		{
+			var songFormat = StringTools.replace('Brother Sus', " ", "-");
+			var poop:String = Highscore.formatSong('Brother Sus', curDifficulty = 2);
+			curDifficulty = 2;	
+			PlayState.SONG = Song.loadFromJson(poop, 'Brother Sus');
+			PlayState.isStoryMode = false;
+			PlayState.storyDifficulty = curDifficulty = 2;
+			LoadingState.loadAndSwitchState(new PlayState());
+		}
+
 		#if PRELOAD_ALL
 		if(space && instPlaying != curSelected)
 		{
@@ -333,33 +346,40 @@ class FreeplayState extends MusicBeatState
 
 	function changeDiff(change:Int = 0)
 	{
-		curDifficulty += change;
+		if (songs[curSelected].songName == 'The Bad Test'){
+			diffText.text = "< OLD >";
+			curDifficulty = 2;
+			diffText.color = FlxColor.GRAY;
+		} else{
 
-		if (curDifficulty < 0)
-			curDifficulty = CoolUtil.difficultyStuff.length-1;
-		if (curDifficulty >= CoolUtil.difficultyStuff.length)
-			curDifficulty = 0;
+			curDifficulty += change;
 
-		#if !switch
-		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
-		intendedRating = Highscore.getRating(songs[curSelected].songName, curDifficulty);
-		#end
+			if (curDifficulty < 0)
+				curDifficulty = CoolUtil.difficultyStuff.length-1;
+			if (curDifficulty >= CoolUtil.difficultyStuff.length)
+				curDifficulty = 0;
 
-		PlayState.storyDifficulty = curDifficulty;
-		diffText.text = '< ' + CoolUtil.difficultyString() + ' >';
-		positionHighscore();
+			#if !switch
+			intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
+			intendedRating = Highscore.getRating(songs[curSelected].songName, curDifficulty);
+			#end
 
-		switch (curDifficulty)
-		{
-			case 0:
-				diffText.text = "< EASY >";
-				diffText.color = FlxColor.LIME;
-			case 1:
-				diffText.text = '< NORMAL >';
-				diffText.color = FlxColor.YELLOW;
-			case 2:
-				diffText.text = "< HARD >";
-				diffText.color = FlxColor.RED;
+			PlayState.storyDifficulty = curDifficulty;
+			diffText.text = '< ' + CoolUtil.difficultyString() + ' >';
+			positionHighscore();
+
+			switch (curDifficulty)
+			{
+				case 0:
+					diffText.text = "< EASY >";
+					diffText.color = FlxColor.LIME;
+				case 1:
+					diffText.text = '< NORMAL >';
+					diffText.color = FlxColor.YELLOW;
+				case 2:
+					diffText.text = "< HARD >";
+					diffText.color = FlxColor.RED;
+			}
 		}
 	}
 
