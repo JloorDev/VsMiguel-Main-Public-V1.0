@@ -243,7 +243,7 @@ class PlayState extends MusicBeatState
 	public static var seenCutscene:Bool = false;
 	public static var deathCounter:Int = 0;
 
-	public var defaultCamZoom:Float = 1.05;
+	public static var defaultCamZoom:Float = 1.05;
 
 	// how big to stretch the pixel art assets
 	public static var daPixelZoom:Float = 6;
@@ -1339,6 +1339,54 @@ class PlayState extends MusicBeatState
 		}
 	}
 
+	public function endVideo(name:String):Void {
+		#if VIDEOS_ALLOWED
+		var foundFile:Bool = false;
+		var fileName:String = #if MODS_ALLOWED Paths.modFolders('videos/' + name + '.' + Paths.VIDEO_EXT); #else ''; #end
+		#if sys
+		if(FileSystem.exists(fileName)) {
+			foundFile = true;
+		}
+		#end
+
+		if(!foundFile) {
+			fileName = Paths.video(name);
+			#if sys
+			if(FileSystem.exists(fileName)) {
+			#else
+			if(OpenFlAssets.exists(fileName)) {
+			#end
+				foundFile = true;
+			}
+		}
+
+		if(foundFile) {
+			inCutscene = true;
+			var bg = new FlxSprite(-FlxG.width, -FlxG.height).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
+			bg.scrollFactor.set();
+			bg.cameras = [camHUD];
+			add(bg);
+
+			(new FlxVideo(fileName)).finishCallback = function() {
+				remove(bg);
+				if(endingSong) {
+					startDialogueEnd(dialogueJsonEnd);
+				} else {
+					startDialogueEnd(dialogueJsonEnd);
+				}
+			}
+			return;
+		} else {
+			FlxG.log.warn('Couldnt find video file: ' + fileName);
+		}
+		#end
+		if(endingSong) {
+			startDialogueEnd(dialogueJsonEnd);
+		} else {
+			startDialogueEnd(dialogueJsonEnd);
+		}
+	}
+
 	public function startVideoandDialogue(name:String):Void {
 		#if VIDEOS_ALLOWED
 		var foundFile:Bool = false;
@@ -1418,7 +1466,6 @@ class PlayState extends MusicBeatState
 
 	public function startDialogueEnd(dialogueFile:DialogueFile, ?song:String = null):Void
 		{
-			// TO DO: Make this more flexible, maybe?
 			canPause = false;
 			if(dialogueFile.dialogue.length > 0) {
 				inCutscene = true;
@@ -3270,18 +3317,30 @@ class PlayState extends MusicBeatState
 		camFollowPos.setPosition(x, y);
 	}
 
-	/*function dialogueEndSong():Void
+	function videoEndHungryDark():Void
+	{
+		endVideo('DariaAnimationEnd');
+	}
+
+	function dialogueEndBrother():Void
 	{
 		startDialogueEnd(dialogueJsonEnd);
-	}*/
+	}
 
 	function finishSong():Void
 	{
-		var finishCallback:Void->Void = endSong; //In case you want to change it in a specific song.
+		var finishCallback:Void->Void = endSong;
 		if(isStoryMode) {
-			switch(SONG.song.toLowerCase()) 
+			if (curSong == 'Hungry Dark')
 			{
-		
+				finishCallback = videoEndHungryDark;
+				remove(DialogueBoxPsych.bgFade);
+				DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
+				add(DialogueBoxPsych.bgFade);
+			}
+			if (curSong == 'Buzzing Brother')
+			{
+				finishCallback = dialogueEndBrother;
 			}
 		}
 
@@ -3374,7 +3433,7 @@ class PlayState extends MusicBeatState
 
 					cancelFadeTween();
 					CustomFadeTransition.nextCamera = camOther;
-					MusicBeatState.switchState(new Cutscenes());
+					MusicBeatState.switchState(new EndingState());
 
 					// if ()
 					if(!usedPractice) {

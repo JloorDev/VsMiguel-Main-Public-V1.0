@@ -171,7 +171,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	public var skipDialogueThing:Void->Void = null;
 	public static var cutscenes1:BitmapData;
 	public static var cutscenes2:BitmapData;
-	var bgFade:FlxSprite = null;
+	public static var bgFade:FlxSprite = null;
 	var box:FlxSprite;
 	var textToType:String = '';
 	var skipText:FlxText;
@@ -547,16 +547,6 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		bgFade.screenCenter(X);
 		bgFade.screenCenter(Y);
 		bgFade.alpha = 1;
-
-		/*
-		if (PlayState.SONG.song.toLowerCase() == 'Buzzing Brother'){
-			bgFade.loadGraphic(cutscenes2);
-			bgFade.setGraphicSize(FlxG.width);
-			bgFade.updateHitbox();
-			bgFade.screenCenter(X);
-			bgFade.screenCenter(Y);
-			bgFade.alpha = 1;
-		}*/
 
 		if (PlayState.SONG.song.toLowerCase() == 'Hungry Dark'){
 			bgFade.loadGraphic(Paths.image('cutscenes/3/0', 'shared'));

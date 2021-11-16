@@ -1,22 +1,17 @@
 package;
+
 import flixel.*;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 
-/**
- * ...
- * @author bbpanzu
- */
 class EndingState extends FlxState
 {
-
 	var _goodEnding:Bool = false;
 	
 	public function new(goodEnding:Bool = true) 
 	{
 		super();
 		_goodEnding = goodEnding;
-		
 	}
 	
 	override public function create():Void 
@@ -36,14 +31,11 @@ class EndingState extends FlxState
 		
 		if (FlxG.keys.pressed.ENTER){
 			endIt();
-		}
-		
-	}
-	
+		}	
+	}	
 	
 	public function endIt(e:FlxTimer=null){
 		trace("ENDING");
 		FlxG.switchState(new CreditsState());
-	}
-	
+	}	
 }

@@ -22,7 +22,7 @@ class Cutscenes extends MusicBeatState{
 	override public function create(){
 		FlxG.sound.play(Paths.sound('DariaAnimationEnd'), 1);
 
-		defaultCamZoom = 0.7;
+		PlayState.defaultCamZoom = 0.5;
 		bgNight = new FlxSprite(-600, -200);
 		bgNight.frames = Paths.getSparrowAtlas('vsMiguel/stageNight/bgNight', 'shared');
 		bgNight.animation.addByPrefix('idle', 'BGHouseNight', 24);
@@ -61,6 +61,7 @@ class Cutscenes extends MusicBeatState{
 		gf.scrollFactor.set(0.9, 0.9);
 		gf.x += 460;
 		gf.y += 810;
+		add(gf);
 
 		miguel = new FlxSprite(-600, -200);
 		miguel.frames = Paths.getSparrowAtlas('cinematic final/Daria_AnimationEnd', 'shared');
