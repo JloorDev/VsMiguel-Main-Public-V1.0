@@ -3269,10 +3269,10 @@ class PlayState extends MusicBeatState
 		camFollowPos.setPosition(x, y);
 	}
 
-	function dialogueEndSong():Void //This function will be removed once we add a second song to Psychic's week, as the cutscene will happen at the start of the second song instead of end of the first one
+	/*function dialogueEndSong():Void
 	{
 		startDialogueEnd(dialogueJsonEnd);
-	}
+	}*/
 
 	function finishSong():Void
 	{
@@ -3280,12 +3280,7 @@ class PlayState extends MusicBeatState
 		if(isStoryMode) {
 			switch(SONG.song.toLowerCase()) 
 			{
-				case 'buzzing-brother': {
-					finishCallback = dialogueEndSong;
-				}	
-				case 'hungry-dark': {
-					finishCallback = dialogueEndSong;
-				}
+		
 			}
 		}
 
