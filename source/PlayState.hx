@@ -153,6 +153,7 @@ class PlayState extends MusicBeatState
 	private var healthBarBG:AttachedSprite;
 	public var healthBar:FlxBar;
 	var songPercent:Float = 0;
+	var finalBG:FlxSprite;
 
 	private var timeBarBG:AttachedSprite;
 	public var timeBar:FlxBar;
@@ -3378,7 +3379,7 @@ class PlayState extends MusicBeatState
 
 					cancelFadeTween();
 					CustomFadeTransition.nextCamera = camOther;
-					MusicBeatState.switchState(new EndingState());
+					MusicBeatState.switchState(new Cutscenes());
 
 					// if ()
 					if(!usedPractice) {
@@ -4390,7 +4391,6 @@ class PlayState extends MusicBeatState
 				if(!ClientPrefs.lowQuality) {
 					bgGirls.dance();
 				}
-
 			case 'mall':
 				if(!ClientPrefs.lowQuality) {
 					upperBoppers.dance(true);
