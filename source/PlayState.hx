@@ -4273,7 +4273,7 @@ class PlayState extends MusicBeatState
 		{
 			switch (curStep)
 			{
-				case 356:
+				case 710:
 					FlxTween.tween(FlxG.camera, {zoom: 1.4}, 1, {ease: FlxEase.quadInOut});
 					new FlxTimer().start(1 , function(tmr:FlxTimer)
 					{
@@ -4294,19 +4294,19 @@ class PlayState extends MusicBeatState
 					timeBar.visible = false;
 					timeBarBG.visible = false;
 					timeTxt.visible = false;
-				case 368:
+				case 738:
 					FlxTween.tween(FlxG.camera, {zoom: 0.7}, 1, {ease: FlxEase.quadInOut});
 					new FlxTimer().start(1 , function(tmr:FlxTimer)
 					{
 						defaultCamZoom = 0.7;
 					});
-				case 707:
+				case 1414:
 					FlxG.camera.shake(0.15, 0.5); 
-				case 826:
+				case 1651:
 					FlxG.camera.flash(FlxColor.WHITE, 1.5);
 					bgDark.alpha = 0;
 					mist.alpha = 0;
-					people.alpha = 1;
+					people.alpha = 0;
 					bgNight.alpha = 1;
 					scoreTxt.visible = true;
 					healthBarBG.visible = true;
