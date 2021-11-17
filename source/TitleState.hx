@@ -42,7 +42,7 @@ class TitleState extends MusicBeatState
 	var credGroup:FlxGroup;
 	var credTextShit:Alphabet;
 	var textGroup:FlxGroup;
-	var logoSpr:FlxSprite;
+	var stupidMiguel:FlxSprite;
 
 	var curWacky:Array<String> = [];
 
@@ -233,13 +233,13 @@ class TitleState extends MusicBeatState
 
 		credTextShit.visible = false;
 
-		logoSpr = new FlxSprite(0, FlxG.height * 0.4).loadGraphic(Paths.image('miguelGAY'));
-		add(logoSpr);
-		logoSpr.visible = false;
-		logoSpr.setGraphicSize(Std.int(logoSpr.width * 0.80));
-		logoSpr.updateHitbox();
-		logoSpr.screenCenter(X);
-		logoSpr.antialiasing = ClientPrefs.globalAntialiasing;
+		stupidMiguel = new FlxSprite(0, FlxG.height * 0.4).loadGraphic(Paths.image("miguelStupid"));
+		add(stupidMiguel);
+		stupidMiguel.visible = false;
+		stupidMiguel.setGraphicSize(Std.int(stupidMiguel.width * 0.80));
+		stupidMiguel.updateHitbox();
+		stupidMiguel.screenCenter(X);
+		stupidMiguel.antialiasing = ClientPrefs.globalAntialiasing;
 
 		FlxTween.tween(credTextShit, {y: credTextShit.y + 20}, 2.9, {ease: FlxEase.quadInOut, type: PINGPONG});
 
@@ -445,52 +445,34 @@ class TitleState extends MusicBeatState
 			switch (curBeat)
 			{
 				case 1:
-					createCoolText(['FNF Vs Miguel by'], 45);
+					createCoolText(["FNF' Vs Miguel by"], 45);
 				// credTextShit.visible = true;
 				case 3:
 					addMoreText('MiguelExtremeStudios', 45);
 					addMoreText('and', 45);
-					addMoreText('Vs Miguel Devs', 45);
-				// credTextShit.text += '\npresent...';
-				// credTextShit.addText();
+					addMoreText('Vs Miguel Team', 45);
 				case 4:
 					deleteCoolText();
-				// credTextShit.visible = false;
-				// credTextShit.text = 'In association \nwith';
-				// credTextShit.screenCenter();
 				case 5:
 					createCoolText(['This is a mod to'], -60);
 				case 7:
-					addMoreText('This idiot here', -60);
-					logoSpr.visible = true;
-				// credTextShit.text += '\nNewgrounds';
+					addMoreText('The idiot here', -60);
+					stupidMiguel.visible = true;
 				case 8:
 					deleteCoolText();
-					logoSpr.visible = false;
-				// credTextShit.visible = false;
-
-				// credTextShit.text = 'Shoutouts Tom Fulp';
-				// credTextShit.screenCenter();
+					stupidMiguel.visible = false;
 				case 9:
 					createCoolText([curWacky[0]]);
-				// credTextShit.visible = true;
 				case 11:
 					addMoreText(curWacky[1]);
-				// credTextShit.text += '\nlmao';
 				case 12:
 					deleteCoolText();
-				// credTextShit.visible = false;
-				// credTextShit.text = "Friday";
-				// credTextShit.screenCenter();
 				case 13:
-					addMoreText('FNF');
-				// credTextShit.visible = true;
+					addMoreText("FNF'");
 				case 14:
 					addMoreText('Vs Miguel');
-				// credTextShit.text += '\nNight';
 				case 15:
-					addMoreText('Full Week'); // credTextShit.text += '\nFunkin';
-
+					addMoreText('Full Week');
 				case 16:
 					skipIntro();
 			}
@@ -503,7 +485,7 @@ class TitleState extends MusicBeatState
 	{
 		if (!skippedIntro)
 		{
-			remove(logoSpr);
+			remove(stupidMiguel);
 			FlxG.camera.flash(FlxColor.BLACK, 1);
 			remove(credGroup);
 

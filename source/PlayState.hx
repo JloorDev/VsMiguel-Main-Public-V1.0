@@ -487,6 +487,7 @@ class PlayState extends MusicBeatState
 
 				case 'stageSus': //stageSus
 					bgSus = new BGSprite('vsMiguel/stageSus/BGRoomSUS', -304, -339);
+					bgSus.antialiasing = true;
 					add(bgSus);
 
 				case 'stageNightDark': //stageNightDark
@@ -1205,19 +1206,19 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 
 				case 'anniversary':
-					FlxG.sound.play(Paths.sound('DialogMusic'));
+					//FlxG.sound.play(Paths.sound('DialogMusic'));
 					startDialogue(dialogueJson);
 
 				case 'mayor-thunder':
-					FlxG.sound.play(Paths.sound('DialogMusic'));
+					//FlxG.sound.play(Paths.sound('DialogMusic'));
 					startDialogue(dialogueJson);
 
 				case 'buzzing-brother':
-					FlxG.sound.play(Paths.sound('DialogMusicBuzzingBrother'));
+					//FlxG.sound.play(Paths.sound('DialogMusicBuzzingBrother'));
 					startDialogue(dialogueJson);
 
 				case 'hungry-dark':
-					FlxG.sound.play(Paths.sound('DialogMusicHundryDark'));
+					//FlxG.sound.play(Paths.sound('DialogMusicHundryDark'));
 					startVideoandDialogue('DariaAnimationStart');
 		
 				default:
@@ -1374,9 +1375,15 @@ class PlayState extends MusicBeatState
 			(new FlxVideo(fileName)).finishCallback = function() {
 				remove(bg);
 				if(endingSong) {
-					startDialogueEnd(dialogueJsonEnd);
+					startDialogueEndHungryDark(dialogueJsonEnd);
+					remove(DialogueBoxPsych.bgFade);
+					DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
+					add(DialogueBoxPsych.bgFade);
 				} else {
-					startDialogueEnd(dialogueJsonEnd);
+					startDialogueEndHungryDark(dialogueJsonEnd);
+					remove(DialogueBoxPsych.bgFade);
+					DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
+					add(DialogueBoxPsych.bgFade);
 				}
 			}
 			return;
@@ -1385,9 +1392,15 @@ class PlayState extends MusicBeatState
 		}
 		#end
 		if(endingSong) {
-			startDialogueEnd(dialogueJsonEnd);
+			startDialogueEndHungryDark(dialogueJsonEnd);
+			remove(DialogueBoxPsych.bgFade);
+			DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
+			add(DialogueBoxPsych.bgFade);
 		} else {
-			startDialogueEnd(dialogueJsonEnd);
+			startDialogueEndHungryDark(dialogueJsonEnd);
+			remove(DialogueBoxPsych.bgFade);
+			DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
+			add(DialogueBoxPsych.bgFade);
 		}
 	}
 
@@ -1442,6 +1455,23 @@ class PlayState extends MusicBeatState
 	//You don't have to add a song, just saying. You can just do "startDialogue(dialogueJson);" and it should work
 	public function startDialogue(dialogueFile:DialogueFile, ?song:String = null):Void
 	{
+		if (curSong == 'Hungry Dark')
+		{
+			FlxG.sound.playMusic(Paths.music('DialogMusicHundryDark'));
+		}
+		if (curSong == 'Buzzing Brother')
+		{
+			FlxG.sound.playMusic(Paths.music('DialogMusicBuzzingBrother'));
+		}
+		if (curSong == 'Anniversary')
+		{
+			FlxG.sound.playMusic(Paths.music('DialogMusic'));
+		}
+		if (curSong == 'Mayor Thunder')
+		{
+			FlxG.sound.playMusic(Paths.music('DialogMusic'));
+		}
+
 		// TO DO: Make this more flexible, maybe?
 		if(dialogueFile.dialogue.length > 0) {
 			inCutscene = true;
@@ -1469,32 +1499,89 @@ class PlayState extends MusicBeatState
 	}
 
 	public function startDialogueEnd(dialogueFile:DialogueFile, ?song:String = null):Void
+	{
+		if (curSong == 'Hungry Dark')
 		{
-			canPause = false;
-			if(dialogueFile.dialogue.length > 0) {
-				inCutscene = true;
-				CoolUtil.precacheSound('dialogue');
-				CoolUtil.precacheSound('dialogueClose');
-				var doof:DialogueBoxPsych = new DialogueBoxPsych(dialogueFile, song);
-				doof.scrollFactor.set();
-				if(endingSong) {
-					doof.finishThing = endSong;
-				} else {
-					doof.finishThing = endSong;
-				}
-				doof.nextDialogueThing = startNextDialogue;
-				doof.skipDialogueThing = skipDialogue;
-				doof.cameras = [camHUD];
-				add(doof);
+			FlxG.sound.playMusic(Paths.music('DialogMusicHundryDark'), 1);
+		}
+		if (curSong == 'Buzzing Brother')
+		{
+			FlxG.sound.playMusic(Paths.music('DialogMusicBuzzingBrother'), 1);
+		}
+		if (curSong == 'Anniversary')
+		{
+			FlxG.sound.playMusic(Paths.music('DialogMusic'), 1);
+		}
+		if (curSong == 'Mayor Thunder')
+		{
+			FlxG.sound.playMusic(Paths.music('DialogMusic'), 1);
+		}
+
+		canPause = false;
+		if(dialogueFile.dialogue.length > 0) {
+			inCutscene = true;
+			CoolUtil.precacheSound('dialogue');
+			CoolUtil.precacheSound('dialogueClose');
+			var doof:DialogueBoxPsych = new DialogueBoxPsych(dialogueFile, song);
+			doof.scrollFactor.set();
+			if(endingSong) {
+				doof.finishThing = endSong;
 			} else {
-				FlxG.log.warn('Your dialogue file is badly formatted!');
-				if(endingSong) {
-					endSong();
-				} else {
-					endSong();
-				}
+				doof.finishThing = endSong;
+			}
+			doof.nextDialogueThing = startNextDialogue;
+			doof.skipDialogueThing = skipDialogue;
+			doof.cameras = [camHUD];
+			add(doof);
+		} else {
+			FlxG.log.warn('Your dialogue file is badly formatted!');
+			if(endingSong) {
+				endSong();
+			} else {
+				endSong();
 			}
 		}
+	}
+
+	public function startDialogueEndHungryDark(dialogueFile:DialogueFile, ?song:String = null):Void
+	{
+		if (curSong == 'Hungry Dark')
+		{
+			remove(DialogueBoxPsych.bgFade);
+			DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
+			add(DialogueBoxPsych.bgFade);
+			FlxG.sound.playMusic(Paths.music('DialogMusicHundryDark'), 1);
+		}
+
+		remove(DialogueBoxPsych.bgFade);
+		DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
+		add(DialogueBoxPsych.bgFade);
+
+		canPause = false;
+		if(dialogueFile.dialogue.length > 0) {
+			inCutscene = true;
+			CoolUtil.precacheSound('dialogue');
+			CoolUtil.precacheSound('dialogueClose');
+			var doof:DialogueBoxPsych = new DialogueBoxPsych(dialogueFile, song);
+			doof.scrollFactor.set();
+			if(endingSong) {
+				doof.finishThing = endSong;
+			} else {
+				doof.finishThing = endSong;
+			}
+			doof.nextDialogueThing = startNextDialogue;
+			doof.skipDialogueThing = skipDialogue;
+			doof.cameras = [camHUD];
+			add(doof);
+		} else {
+			FlxG.log.warn('Your dialogue file is badly formatted!');
+			if(endingSong) {
+				endSong();
+			} else {
+				endSong();
+			}
+		}
+	}
 
 	function schoolIntro(?dialogueBox:DialogueBox):Void
 	{
@@ -1588,18 +1675,13 @@ class PlayState extends MusicBeatState
 
 	function go():Void
 	{
-		FlxG.camera.zoom += 0.10;
-		camHUD.zoom += 0.05;
-
+		defaultCamZoom = 0.7; 
+		FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom + 0.7}, 1, {ease: FlxEase.quadOut, type: BACKWARD});
 		var go:FlxSprite = new FlxSprite().loadGraphic(Paths.image('go'));
-		go.setGraphicSize(Std.int(go.width * 1.5));
 		go.scrollFactor.set();
 
 		go.updateHitbox();
-
 		go.screenCenter();
-		go.y -= 100;
-
 		add(go);
 		FlxTween.tween(go, {y: go.y += 100, alpha: 0}, Conductor.crochet / 1000, {
 			ease: FlxEase.cubeInOut,
@@ -4340,7 +4422,7 @@ class PlayState extends MusicBeatState
 					});
 
 					FlxG.camera.shake(0.15, 2);
-					FlxG.camera.flash(FlxColor.WHITE, 5);
+					FlxG.camera.flash(FlxColor.RED, 5);
 					bgNight.alpha = 0;
 					people.revive();
 					bgDark.revive();
