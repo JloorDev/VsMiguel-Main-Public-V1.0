@@ -976,11 +976,6 @@ class PlayState extends MusicBeatState
 		var file:String = Paths.json(songName + '/dialogueend'); //Checks for json/Psych Engine dialogue
 		if (OpenFlAssets.exists(file)) {
 			dialogueJsonEnd = DialogueBoxPsych.parseDialogue(file);
-
-			if (SONG.song == "Hungry Dark")
-			{
-				DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
-			}
 		}
 
 		var file:String = Paths.txt(songName + '/' + songName + 'Dialogue'); //Checks for vanilla/Senpai dialogue
