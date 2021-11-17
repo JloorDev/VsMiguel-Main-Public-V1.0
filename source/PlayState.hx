@@ -118,6 +118,9 @@ class PlayState extends MusicBeatState
 
 	public var vocals:FlxSound;
 
+	var blackBG:FlxSprite;
+	var blackFG:FlxSprite;
+
 	public var dad:Character;
 	public var gf:Character;
 	public var boyfriend:Boyfriend;
@@ -175,6 +178,7 @@ class PlayState extends MusicBeatState
 	public var camHUD:FlxCamera;
 	public var camGame:FlxCamera;
 	public var camOther:FlxCamera;
+	public var hudAlpha:Bool = false;
 
 	var dialogue:Array<String> = ['blah blah blah', 'coolswag'];
 	var dialogueJson:DialogueFile = null;
@@ -814,6 +818,14 @@ class PlayState extends MusicBeatState
 					add(bg);
 				}
 		}
+
+		blackBG = new FlxSprite().makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), FlxColor.BLACK);
+		blackBG.x -= 200;
+		blackBG.y -= 200;
+		add(blackBG);
+		blackBG.scale.set(5, 5);
+		blackBG.alpha = 0;
+		blackBG.scrollFactor.set();
 		
 		add(gfGroup);
 
@@ -928,6 +940,14 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+		blackFG = new FlxSprite().makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), FlxColor.BLACK);
+		blackFG.x -= 200;
+		blackFG.y -= 200;
+		add(blackFG);
+		blackFG.alpha = 0;
+		blackFG.scale.set(5, 5);
+		blackFG.scrollFactor.set();
+
 		switch(curStage)
 		{
 			case 'limo':
@@ -937,6 +957,15 @@ class PlayState extends MusicBeatState
 			case 'schoolEvil':
 				var evilTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069); //nice
 				insert(members.indexOf(dadGroup) - 1, evilTrail);
+
+			case 'stageSus':
+				gf.alpha = 0;
+				dad.alpha = 0;
+				boyfriend.alpha = 0;
+				blackBG.alpha = 1;
+				blackFG.alpha = 1;
+				camHUD.alpha = 0;
+				hudAlpha = true;
 		}
 
 		var file:String = Paths.json(songName + '/dialogue'); //Checks for json/Psych Engine dialogue
@@ -947,6 +976,11 @@ class PlayState extends MusicBeatState
 		var file:String = Paths.json(songName + '/dialogueend'); //Checks for json/Psych Engine dialogue
 		if (OpenFlAssets.exists(file)) {
 			dialogueJsonEnd = DialogueBoxPsych.parseDialogue(file);
+
+			if (SONG.song == "Hungry Dark")
+			{
+				DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
+			}
 		}
 
 		var file:String = Paths.txt(songName + '/' + songName + 'Dialogue'); //Checks for vanilla/Senpai dialogue
@@ -1376,14 +1410,8 @@ class PlayState extends MusicBeatState
 				remove(bg);
 				if(endingSong) {
 					startDialogueEndHungryDark(dialogueJsonEnd);
-					remove(DialogueBoxPsych.bgFade);
-					DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
-					add(DialogueBoxPsych.bgFade);
 				} else {
 					startDialogueEndHungryDark(dialogueJsonEnd);
-					remove(DialogueBoxPsych.bgFade);
-					DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
-					add(DialogueBoxPsych.bgFade);
 				}
 			}
 			return;
@@ -1393,14 +1421,8 @@ class PlayState extends MusicBeatState
 		#end
 		if(endingSong) {
 			startDialogueEndHungryDark(dialogueJsonEnd);
-			remove(DialogueBoxPsych.bgFade);
-			DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
-			add(DialogueBoxPsych.bgFade);
 		} else {
 			startDialogueEndHungryDark(dialogueJsonEnd);
-			remove(DialogueBoxPsych.bgFade);
-			DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
-			add(DialogueBoxPsych.bgFade);
 		}
 	}
 
@@ -1545,18 +1567,6 @@ class PlayState extends MusicBeatState
 
 	public function startDialogueEndHungryDark(dialogueFile:DialogueFile, ?song:String = null):Void
 	{
-		if (curSong == 'Hungry Dark')
-		{
-			remove(DialogueBoxPsych.bgFade);
-			DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
-			add(DialogueBoxPsych.bgFade);
-			FlxG.sound.playMusic(Paths.music('DialogMusicHundryDark'), 1);
-		}
-
-		remove(DialogueBoxPsych.bgFade);
-		DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
-		add(DialogueBoxPsych.bgFade);
-
 		canPause = false;
 		if(dialogueFile.dialogue.length > 0) {
 			inCutscene = true;
@@ -3413,16 +3423,13 @@ class PlayState extends MusicBeatState
 		startDialogueEnd(dialogueJsonEnd);
 	}
 
-	function finishSong():Void
+	public function finishSong():Void
 	{
 		var finishCallback:Void->Void = endSong;
 		if(isStoryMode) {
 			if (curSong == 'Hungry Dark')
 			{
 				finishCallback = videoEndHungryDark;
-				remove(DialogueBoxPsych.bgFade);
-				DialogueBoxPsych.bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
-				add(DialogueBoxPsych.bgFade);
 			}
 			if (curSong == 'Buzzing Brother')
 			{
@@ -4412,6 +4419,62 @@ class PlayState extends MusicBeatState
 			{
 				case 83:
 					go();
+			}
+		}
+
+		if (curStage == 'stageSus' && curSong == 'Brother SUS')
+		{
+			switch (curStep)
+			{
+				case 63:
+					FlxTween.tween(blackBG, {alpha: 0}, 2.5, {
+					ease: FlxEase.quadOut,
+					onComplete: function(twn:FlxTween)
+					{
+						blackBG.visible = false;
+					}
+				});
+
+					FlxTween.tween(blackFG, {alpha: 0}, 2.5, {
+					ease: FlxEase.quadOut,
+					onComplete: function(twn:FlxTween)
+					{
+						blackFG.visible = false;
+					}
+				});
+
+					FlxTween.tween(boyfriend, {alpha: 1}, 2.5, {
+					ease: FlxEase.quadOut,
+					onComplete: function(twn:FlxTween)
+					{
+						boyfriend.visible = true;
+					}
+				});
+
+				FlxTween.tween(dad, {alpha: 1}, 2.5, {
+					ease: FlxEase.quadOut,
+					onComplete: function(twn:FlxTween)
+					{
+						dad.visible = true;
+					}
+				});
+
+				FlxTween.tween(gf, {alpha: 1}, 2.5, {
+					ease: FlxEase.quadOut,
+					onComplete: function(twn:FlxTween)
+					{
+						gf.visible = true;
+					}
+				});
+
+				hudAlpha = false;
+				FlxTween.tween(camHUD, {alpha: 1}, 2.5, {
+					ease: FlxEase.quadOut,
+					onComplete: function(twn:FlxTween)
+					{
+						camHUD.visible = true;
+					}
+				});
 			}
 		}
 
