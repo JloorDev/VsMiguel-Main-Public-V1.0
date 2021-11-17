@@ -267,7 +267,7 @@ class FreeplayState extends MusicBeatState
 			MusicBeatState.switchState(new MainMenuState());
 		}
 
-		if (FlxG.keys.justPressed.P)
+		if (FlxG.keys.justPressed.N)
 		{
 			var songFormat = StringTools.replace('Brother SUS', " ", "-");
 			var poop:String = Highscore.formatSong('Brother SUS', curDifficulty = 2);

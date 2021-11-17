@@ -864,7 +864,7 @@ class PlayState extends MusicBeatState
 
 		if(!modchartSprites.exists('blammedLightsBlack')) { //Creates blammed light black fade in case you didn't make your own
 			blammedLightsBlack = new ModchartSprite(FlxG.width * -0.5, FlxG.height * -0.5);
-			blammedLightsBlack.makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), FlxColor.BLACK);
+			blammedLightsBlack.makeGraphic(Std.int(FlxG.width * 8), Std.int(FlxG.height * 8), FlxColor.BLACK);
 			var position:Int = members.indexOf(gfGroup);
 			if(members.indexOf(boyfriendGroup) < position) {
 				position = members.indexOf(boyfriendGroup);
@@ -4414,7 +4414,7 @@ class PlayState extends MusicBeatState
 		{
 			switch (curStep)
 			{
-				case 710:
+				case 355:
 					FlxTween.tween(FlxG.camera, {zoom: 1.4}, 1, {ease: FlxEase.quadInOut});
 					new FlxTimer().start(1 , function(tmr:FlxTimer)
 					{
@@ -4435,15 +4435,15 @@ class PlayState extends MusicBeatState
 					timeBar.visible = false;
 					timeBarBG.visible = false;
 					timeTxt.visible = false;
-				case 738:
+				case 369:
 					FlxTween.tween(FlxG.camera, {zoom: 0.7}, 1, {ease: FlxEase.quadInOut});
 					new FlxTimer().start(1 , function(tmr:FlxTimer)
 					{
 						defaultCamZoom = 0.7;
 					});
-				case 1414:
+				case 707:
 					FlxG.camera.shake(0.15, 0.5); 
-				case 1651:
+				case 826:
 					FlxG.camera.flash(FlxColor.WHITE, 1.5);
 					bgDark.alpha = 0;
 					mist.alpha = 0;
