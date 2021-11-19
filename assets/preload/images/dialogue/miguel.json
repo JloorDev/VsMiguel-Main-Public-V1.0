@@ -1,128 +1,128 @@
 {
+	"dialogue_pos": "left",
 	"position": [
 		210,
 		30
 	],
-	"dialogue_pos": "left",
 	"scale": 1.55,
-	"image": "Miguel_dialogue",
 	"animations": [
 		{
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
 			"anim": "MiguelText",
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
-			"loop_name": "Miguel_Text",
-			"idle_name": "Miguel_Text"
+			"idle_name": "Miguel_TextEND",
+			"loop_name": "Miguel_Text"
 		},
 		{
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
 			"anim": "MiguelSadslime",
-			"idle_offsets": [
-				0,
-				0
-			],
-			"loop_name": "Miguel_Sadsmile",
-			"idle_name": "Miguel_Sadsmile"
-		},
-		{
 			"loop_offsets": [
 				0,
 				0
 			],
-			"anim": "MiguelCorrupt",
+			"idle_name": "Miguel_SadsmileEND",
+			"loop_name": "Miguel_Sadsmile"
+		},
+		{
 			"idle_offsets": [
 				-20,
 				-29
 			],
-			"loop_name": "Miguel_Corrupt",
-			"idle_name": "Miguel_Corrupt"
+			"anim": "CorruptMiguel",
+			"loop_offsets": [
+				-21,
+				-27
+			],
+			"idle_name": "Corrupt_MiguelEND",
+			"loop_name": "Corrupt_Miguel"
 		},
 		{
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
-				0
+				-5
 			],
 			"anim": "MiguelTirednormal",
-			"idle_offsets": [
-				0,
-				-5
-			],
-			"loop_name": "Miguel_TiredNormal",
-			"idle_name": "Miguel_TiredNormal"
-		},
-		{
 			"loop_offsets": [
 				0,
 				0
+			],
+			"idle_name": "Miguel_TiredNormal",
+			"loop_name": "Miguel_TiredNormal"
+		},
+		{
+			"idle_offsets": [
+				0,
+				-5
 			],
 			"anim": "MiguelTiredSad",
-			"idle_offsets": [
-				0,
-				-5
-			],
-			"loop_name": "Miguel_TiredSad",
-			"idle_name": "Miguel_TiredSad"
-		},
-		{
 			"loop_offsets": [
 				0,
 				0
+			],
+			"idle_name": "Miguel_TiredSad",
+			"loop_name": "Miguel_TiredSad"
+		},
+		{
+			"idle_offsets": [
+				0,
+				-5
 			],
 			"anim": "MiguelConfused",
-			"idle_offsets": [
-				0,
-				-5
-			],
-			"loop_name": "Miguel_confused",
-			"idle_name": "Miguel_confused"
-		},
-		{
 			"loop_offsets": [
 				0,
 				0
+			],
+			"idle_name": "Miguel_confused",
+			"loop_name": "Miguel_confused"
+		},
+		{
+			"idle_offsets": [
+				0,
+				-5
 			],
 			"anim": "MiguelHappy",
-			"idle_offsets": [
-				0,
-				-5
-			],
-			"loop_name": "Miguel_happy",
-			"idle_name": "Miguel_happy"
-		},
-		{
 			"loop_offsets": [
 				0,
 				0
+			],
+			"idle_name": "Miguel_happy",
+			"loop_name": "Miguel_happy"
+		},
+		{
+			"idle_offsets": [
+				0,
+				-5
 			],
 			"anim": "MiguelSmugsmile",
-			"idle_offsets": [
-				0,
-				-5
-			],
-			"loop_name": "Miguel_smugsmile",
-			"idle_name": "Miguel_smugsmile"
-		},
-		{
-			"idle_offsets": [
-				0,
-				-5
-			],
-			"anim": "MiguelPensive",
 			"loop_offsets": [
 				0,
 				0
 			],
-			"idle_name": "Miguel_Pensive",
-			"loop_name": "Miguel_Pensive"
+			"idle_name": "Miguel_smugsmile",
+			"loop_name": "Miguel_smugsmile"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "MiguelPensive",
+			"idle_offsets": [
+				0,
+				-5
+			],
+			"loop_name": "Miguel_Pensive",
+			"idle_name": "Miguel_Pensive"
 		}
-	]
+	],
+	"image": "Miguel_dialogue"
 }

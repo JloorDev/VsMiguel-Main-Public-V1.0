@@ -8,10 +8,12 @@
 	<SubTexture name="Nelson_Happy0003" x="215" y="0" width="215" height="373"/>
 	<SubTexture name="Nelson_Happy0004" x="430" y="0" width="215" height="373"/>
 	<SubTexture name="Nelson_Happy0005" x="430" y="0" width="215" height="373"/>
+	<SubTexture name="Nelson_HappyEND0000" x="430" y="0" width="215" height="373"/>
 	<SubTexture name="Nelson_Text0000" x="645" y="0" width="215" height="373"/>
 	<SubTexture name="Nelson_Text0001" x="645" y="0" width="215" height="373"/>
 	<SubTexture name="Nelson_Text0002" x="0" y="373" width="215" height="373"/>
 	<SubTexture name="Nelson_Text0003" x="0" y="373" width="215" height="373"/>
 	<SubTexture name="Nelson_Text0004" x="215" y="373" width="215" height="373"/>
 	<SubTexture name="Nelson_Text0005" x="215" y="373" width="215" height="373"/>
+	<SubTexture name="Nelson_TextEND0000" x="215" y="373" width="215" height="373"/>
 </TextureAtlas>

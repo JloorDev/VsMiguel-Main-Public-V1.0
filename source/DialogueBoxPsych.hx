@@ -12,13 +12,15 @@ import flixel.util.FlxTimer;
 import flixel.FlxSubState;
 import haxe.Json;
 import haxe.format.JsonParser;
-import openfl.display.BitmapData;
-import PlayState;
+import flixel.tweens.FlxEase;
+import flixel.tweens.FlxTween;
+import flixel.FlxCamera;
 #if sys
 import sys.FileSystem;
 import sys.io.File;
 #end
 import openfl.utils.Assets;
+import PlayState;
 
 using StringTools;
 
@@ -69,8 +71,6 @@ class DialogueCharacter extends FlxSprite
 	public var startingPos:Float = 0; //For center characters, it works as the starting Y, for everything else it works as starting X
 	public var isGhost:Bool = false; //For the editor
 	public var curCharacter:String = 'bf';
-
-	var cutSprite:FlxSprite;
 
 	public function new(x:Float = 0, y:Float = 0, character:String = null)
 	{
@@ -159,22 +159,17 @@ class DialogueCharacter extends FlxSprite
 	}
 }
 
-// TO DO: Clean code? Maybe? idk
 class DialogueBoxPsych extends FlxSpriteGroup
 {
 	var dialogue:Alphabet;
-	public var dialogueList:DialogueFile = null;
-	var dialogueListOld:Array<String> = [];
+	var dialogueList:DialogueFile = null;
 
 	public var finishThing:Void->Void;
 	public var nextDialogueThing:Void->Void = null;
 	public var skipDialogueThing:Void->Void = null;
-	public static var cutscenes1:BitmapData;
-	public static var cutscenes2:BitmapData;
-	public static var bgFade:FlxSprite = null;
+	public var bgFade:FlxSprite = null;
 	var box:FlxSprite;
 	var textToType:String = '';
-	var skipText:FlxText;
 
 	var arrayCharacters:Array<DialogueCharacter> = [];
 
@@ -182,42 +177,68 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	var offsetPos:Float = -600;
 
 	var textBoxTypes:Array<String> = ['normal', 'angry'];
-	var cutFolder = 'cutscene_1';
+
+
+	var cutPath:String = 'cutscenes/cut/';
+	public var curCutscene:Int = 1;
+	var skipText:FlxText;
+	var cutscene:FlxSprite;
+	var cutsceneFront:FlxSprite;
+	public var doCutscene:Int = 1;
+
+	public static var camSans:FlxCamera;
+	var defaultCamZoom:Float = 1;
 
 	public function new(dialogueList:DialogueFile, ?song:String = null)
 	{
-		//cutscenes1 = Cutscenes.cutscenes1(!ClientPrefs.cutscenes);
-		//cutscenes2 = Cutscenes.cutscenes2(!ClientPrefs.cutscenes);
-
 		super();
+		camSans = new FlxCamera();
+		defaultCamZoom = camSans.zoom;
 
 		if(song != null && song != '') {
 			FlxG.sound.playMusic(Paths.music(song), 0);
 			FlxG.sound.music.fadeIn(2, 0, 1);
 		}
-		var prop = CoolUtil.coolTextFile(Paths.txt(PlayState.SONG.song.toLowerCase() + '/prop'));
-		cutFolder = prop[0];
 		
-		bgFade = new FlxSprite(0, 0).makeGraphic(100, 100);
-		if (PlayState.SONG.song == "Anniversary")
+		switch (PlayState.curStage)
 		{
-			bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/11', 'shared'));
+			case 'stageDay':
+				bgFade = new FlxSprite(0,0);
+				add(bgFade);	
+
+				cutscene = new FlxSprite(0, 0).loadGraphic(Paths.image(cutPath + doCutscene));
+			case 'stageAfternoon':
+				bgFade = new FlxSprite(0,0);
+				add(bgFade);
+
+				doCutscene = 15;
+			case 'stageNight':
+				bgFade = new FlxSprite(0,0);
+				add(bgFade);
+
+				doCutscene = 16;
+			case 'stageNightDark':
+				bgFade = new FlxSprite(0,0);
+				add(bgFade);
+
+				doCutscene = 20;
+			default:
+				bgFade = new FlxSprite(-500, -500).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.WHITE);
+				bgFade.scrollFactor.set();
+				bgFade.visible = true;
+				bgFade.alpha = 0;
+				add(bgFade);
 		}
-		if (PlayState.SONG.song == "Mayor Thunder")
+
+		if (PlayState.curStage == 'stageDay' || PlayState.curStage == 'stageAfternoon' || PlayState.curStage == 'stageNight' || PlayState.curStage == 'stageNightDark')
 		{
-			bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/1/14', 'shared'));
+			cutscene = new FlxSprite(0, 0).loadGraphic(Paths.image(cutPath + doCutscene));
+			cutscene.setGraphicSize(1280, 720); 
+			cutscene.screenCenter(X);
+			cutscene.screenCenter(Y);
+			cutscene.antialiasing = true;
+			add(cutscene);
 		}
-		if (PlayState.SONG.song == "Buzzing Brother")
-		{
-			bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/2/0', 'shared'));
-		}
-		if (PlayState.SONG.song == "Hungry Dark")
-		{
-			bgFade = new FlxSprite(-5).loadGraphic(Paths.image('cutscenes/3/0', 'shared'));
-		}
-		bgFade.scrollFactor.set();
-		bgFade.alpha = 0;
-		add(bgFade);
 
 		this.dialogueList = dialogueList;
 		spawnCharacters();
@@ -248,6 +269,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		add(skipText);
 
 		startNextDialog();
+		cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
 	}
 
 	var dialogueStarted:Bool = false;
@@ -281,7 +303,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 			char.updateHitbox();
 			char.antialiasing = ClientPrefs.globalAntialiasing;
 			char.scrollFactor.set();
-			char.alpha = 0;
+			char.alpha = 0.00001;
 			add(char);
 
 			var saveY:Bool = false;
@@ -309,16 +331,26 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	public static var DEFAULT_TEXT_Y = 430;
 	var scrollSpeed = 4500;
 	var daText:Alphabet = null;
+	var ignoreThisFrame:Bool = true;
+
+	var cutBool:Bool = false;
+
 	override function update(elapsed:Float)
 	{
+		if(ignoreThisFrame) {
+			ignoreThisFrame = false;
+			super.update(elapsed);
+			return;
+		}
+
 		if(!dialogueEnded) {
-			bgFade.alpha += 1.3 * elapsed;
-			if(bgFade.alpha > 1.3) bgFade.alpha = 1.3;
+			bgFade.alpha += 0.5 * elapsed;
+			if(bgFade.alpha > 0.5) bgFade.alpha = 0.5;
 
 			skipText.alpha += 1 * elapsed;
 			if(skipText.alpha > 1) skipText.alpha = 1;
 
-			if(PlayerSettings.player1.controls.ACCEPT) {
+			if(PlayerSettings.player1.controls.ACCEPT && !cutBool) {
 				if(!daText.finishedText) {
 					if(daText != null) {
 						daText.killTheTimer();
@@ -328,7 +360,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 					}
 					daText = new Alphabet(DEFAULT_TEXT_X, DEFAULT_TEXT_Y, textToType, false, true, 0.0, 0.7);
 					add(daText);
-					
+
 					if(skipDialogueThing != null) {
 						skipDialogueThing();
 					}
@@ -353,7 +385,34 @@ class DialogueBoxPsych extends FlxSpriteGroup
 					updateBoxOffsets(box);
 					FlxG.sound.music.fadeOut(1, 0);
 				} else {
-					startNextDialog();
+					curCutscene++;
+					trace('curCut: ' + curCutscene);
+
+					switch (PlayState.curStage) //Miguel Yeahh!!!
+					{
+						case 'stageDay':
+							switch (curCutscene)
+							{
+								case 7 | 10 | 12 | 13 | 14 | 15 | 20 | 21 | 22 | 23 | 24 | 40 | 41:
+									doCutscene++;				
+							}
+						case 'stageNight':
+							switch (curCutscene)
+							{
+								case 11 | 12 | 15:
+									doCutscene++;
+							}
+						}
+						if (PlayState.curStage == 'stageDay' || PlayState.curStage == 'stageAfternoon' || PlayState.curStage == 'stageNight' || PlayState.curStage == 'stageNightDark')
+						{
+							if(!cutBool)
+							{
+								trace('doCut: ' + doCutscene);
+								cutscene.loadGraphic(Paths.image(cutPath + doCutscene));
+							}
+						}
+					if(!cutBool)
+						startNextDialog();
 				}
 				FlxG.sound.play(Paths.sound('dialogueClose'));
 			} else if(daText.finishedText) {
@@ -398,7 +457,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 									if(char.x > char.startingPos - offsetPos) char.x = char.startingPos - offsetPos;
 							}
 							char.alpha -= 3 * elapsed;
-							if(char.alpha < 0) char.alpha = 0;
+							if(char.alpha < 0.00001) char.alpha = 0.00001;
 						} else {
 							switch(char.jsonFile.dialogue_pos) {
 								case 'left':
@@ -426,7 +485,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 			}
 
 			if(bgFade != null) {
-				bgFade.alpha -= 1.3 * elapsed;
+				bgFade.alpha -= 0.5 * elapsed;
 				if(bgFade.alpha <= 0) {
 					bgFade.kill();
 					remove(bgFade);
@@ -489,7 +548,6 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	var lastBoxType:String = '';
 	function startNextDialog():Void
 	{
-		var splitName:Array<String> = dialogueListOld[0].split(":");
 		var curDialogue:DialogueLine = null;
 		do {
 			curDialogue = dialogueList.dialogue[currentText];
@@ -540,22 +598,6 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		textToType = curDialogue.text;
 		daText = new Alphabet(DEFAULT_TEXT_X, DEFAULT_TEXT_Y, textToType, false, true, curDialogue.speed, 0.7);
 		add(daText);
-
-		bgFade.loadGraphic(cutscenes1);
-		bgFade.setGraphicSize(FlxG.width);
-		bgFade.updateHitbox();
-		bgFade.screenCenter(X);
-		bgFade.screenCenter(Y);
-		bgFade.alpha = 1;
-
-		if (PlayState.SONG.song.toLowerCase() == 'Hungry Dark'){
-			bgFade.loadGraphic(Paths.image('cutscenes/3/0', 'shared'));
-			bgFade.setGraphicSize(FlxG.width);
-			bgFade.updateHitbox();
-			bgFade.screenCenter(X);
-			bgFade.screenCenter(Y);
-			bgFade.alpha = 1;
-		}
 
 		var char:DialogueCharacter = arrayCharacters[character];
 		if(char != null) {

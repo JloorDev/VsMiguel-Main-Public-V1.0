@@ -2,12 +2,13 @@
 <TextureAtlas imagePath="Miguel_dialogue.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Miguel_Corrupt0000" x="0" y="0" width="300" height="408"/>
-	<SubTexture name="Miguel_Corrupt0001" x="0" y="0" width="300" height="408"/>
-	<SubTexture name="Miguel_Corrupt0002" x="300" y="0" width="300" height="408"/>
-	<SubTexture name="Miguel_Corrupt0003" x="300" y="0" width="300" height="408"/>
-	<SubTexture name="Miguel_Corrupt0004" x="600" y="0" width="300" height="408"/>
-	<SubTexture name="Miguel_Corrupt0005" x="600" y="0" width="300" height="408"/>
+	<SubTexture name="Corrupt_Miguel0000" x="0" y="0" width="300" height="408"/>
+	<SubTexture name="Corrupt_Miguel0001" x="0" y="0" width="300" height="408"/>
+	<SubTexture name="Corrupt_Miguel0002" x="300" y="0" width="300" height="408"/>
+	<SubTexture name="Corrupt_Miguel0003" x="300" y="0" width="300" height="408"/>
+	<SubTexture name="Corrupt_Miguel0004" x="600" y="0" width="300" height="408"/>
+	<SubTexture name="Corrupt_Miguel0005" x="600" y="0" width="300" height="408"/>
+	<SubTexture name="Corrupt_MiguelEND0000" x="600" y="0" width="300" height="408"/>
 	<SubTexture name="Miguel_Pensive0000" x="900" y="0" width="274" height="430"/>
 	<SubTexture name="Miguel_Sadsmile0000" x="1174" y="0" width="274" height="435"/>
 	<SubTexture name="Miguel_Sadsmile0001" x="1174" y="0" width="274" height="435"/>
@@ -15,12 +16,14 @@
 	<SubTexture name="Miguel_Sadsmile0003" x="1448" y="0" width="274" height="435"/>
 	<SubTexture name="Miguel_Sadsmile0004" x="1722" y="0" width="274" height="435"/>
 	<SubTexture name="Miguel_Sadsmile0005" x="1722" y="0" width="274" height="435"/>
+	<SubTexture name="Miguel_SadsmileEND0000" x="1722" y="0" width="274" height="435"/>
 	<SubTexture name="Miguel_Text0000" x="0" y="435" width="274" height="435"/>
 	<SubTexture name="Miguel_Text0001" x="0" y="435" width="274" height="435"/>
 	<SubTexture name="Miguel_Text0002" x="274" y="435" width="274" height="435"/>
 	<SubTexture name="Miguel_Text0003" x="274" y="435" width="274" height="435"/>
 	<SubTexture name="Miguel_Text0004" x="548" y="435" width="274" height="435"/>
 	<SubTexture name="Miguel_Text0005" x="548" y="435" width="274" height="435"/>
+	<SubTexture name="Miguel_TextEND0000" x="548" y="435" width="274" height="435"/>
 	<SubTexture name="Miguel_TiredNormal0000" x="822" y="435" width="274" height="430"/>
 	<SubTexture name="Miguel_TiredSad0000" x="1096" y="435" width="274" height="430"/>
 	<SubTexture name="Miguel_confused0000" x="1370" y="435" width="274" height="430"/>

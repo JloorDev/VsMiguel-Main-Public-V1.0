@@ -1474,22 +1474,21 @@ class PlayState extends MusicBeatState
 	{
 		if (curSong == 'Hungry Dark')
 		{
-			FlxG.sound.playMusic(Paths.music('DialogMusicHundryDark'));
+			FlxG.sound.playMusic(Paths.music('DialogMusicHundryDark'), 1);
 		}
 		if (curSong == 'Buzzing Brother')
 		{
-			FlxG.sound.playMusic(Paths.music('DialogMusicBuzzingBrother'));
+			FlxG.sound.playMusic(Paths.music('DialogMusicBuzzingBrother'), 1);
 		}
 		if (curSong == 'Anniversary')
 		{
-			FlxG.sound.playMusic(Paths.music('DialogMusic'));
+			FlxG.sound.playMusic(Paths.music('DialogMusic'), 1);
 		}
 		if (curSong == 'Mayor Thunder')
 		{
-			FlxG.sound.playMusic(Paths.music('DialogMusic'));
+			FlxG.sound.playMusic(Paths.music('DialogMusic'), 1);
 		}
 
-		// TO DO: Make this more flexible, maybe?
 		if(dialogueFile.dialogue.length > 0) {
 			inCutscene = true;
 			CoolUtil.precacheSound('dialogue');
@@ -1562,6 +1561,11 @@ class PlayState extends MusicBeatState
 
 	public function startDialogueEndHungryDark(dialogueFile:DialogueFile, ?song:String = null):Void
 	{
+		if (curSong == 'Hungry Dark')
+		{
+			FlxG.sound.playMusic(Paths.music('DialogMusicHundryDark'), 1);
+		}
+
 		canPause = false;
 		if(dialogueFile.dialogue.length > 0) {
 			inCutscene = true;

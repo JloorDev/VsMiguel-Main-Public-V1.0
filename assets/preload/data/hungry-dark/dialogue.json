@@ -85,14 +85,14 @@
 			"speed": 0.045
 		},
 		{
-			"expression": "MiguelCorrupt",
+			"expression": "CorruptMiguel",
 			"text": "...",
 			"boxState": "normal",
 			"portrait": "miguel",
 			"speed": 0.06
 		},
 		{
-			"expression": "MiguelCorrupt",
+			"expression": "CorruptMiguel",
 			"text": "What...? who I am...?",
 			"boxState": "normal",
 			"portrait": "miguel",
@@ -197,7 +197,7 @@
 			"speed": 0.045
 		},
 		{
-			"expression": "MiguelCorrupt",
+			"expression": "CorruptMiguel",
 			"text": "I like to sing...",
 			"boxState": "normal",
 			"portrait": "miguel",

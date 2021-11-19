@@ -47,6 +47,8 @@ class MainMenuState extends MusicBeatState
 
 	override function create()
 	{
+		FlxG.mouse.visible = false;
+
 		#if desktop
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
@@ -122,7 +124,7 @@ class MainMenuState extends MusicBeatState
 
 		//FlxG.camera.follow(camFollowPos, null, 1);
 
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 64, 0, "Vs. Miguel v1.0.0", 12);
+		var versionShit:FlxText = new FlxText(12, FlxG.height - 64, 0, "Vs. Miguel v1.1.0", 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
@@ -162,7 +164,7 @@ class MainMenuState extends MusicBeatState
 	}
 	#end
 
-	var selectedSomethin:Bool = false;
+	public var selectedSomethin:Bool = false;
 
 	override function update(elapsed:Float)
 	{
